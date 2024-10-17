@@ -1,0 +1,55 @@
+원격저장소 : git-hub
+repository : 레파지토리 (*저장공간)
+데이터 업로드 용량 제한 :
+1) 터미널 활용 : 100MB까지 
+2) 수동 : 25MB까지
+
+git-hub 생성된 원격저장소 레포지토리 주소!!!
+https://github.com/Eunjoo-Jung/sbs_webclass_241015
+
+로컬컴퓨터 git 설치가 되어야지만 파일 연결 가능.
+-> 구글 > git > download for windows > standalone installer > 64-bit git for windows setup > install 
+v2.47.0 (2번의 업데이트 완, 앞뒤의 호환성이 높음, 바이러스 여부)
+
+cmd > 관리자 권한으로 실행 > git -v
+
+git config --list
+
+git config --global user.name "Eunjoo-Jung"
+
+git config --global user.email "jejrabbit@naver.com"
+
+swiper // slick // featherlight // gsap // anime // targetEffectscroll // three // chart
+
+로컬컴퓨터 > 다수의 프로젝트 
+staging area : git hub-data 를 옮기기 전에 로컬컴퓨터 안에 별도의 공간을 만들어서 버전관리
+> 가장 최상위 루프폴더 1개만 있어야 !! 
+
+
+vs에서 터미널 열기 : ctrl + ~키 > +v 누르면 git bash 클릭 >  
+cd .. (현재 위치한 디렉토리 바로 위 상위 디렉토리로 이동하겠다.) >
+cd . 
+ctrl + ~키 > +v 누르면 git bash 클릭
+(git초기화하기)
+git init  (.git 이라는 폴더가 생겨있어야 함)
+git add . (git에 넣었다는 뜻)
+git status
+git remote add origin https://github.com/Eunjoo-Jung/sbs_webclass_241015.git
+(git-hub 프로필 클릭해서 or create a new  어쩌고 복붙)
+git remote -v
+(fetch) : 값을 받아옴
+(push) : 값을 보냄
+
+git commit -m(메세지) "241016(라벨)"
+(원격저장소로 보낼 준비 끝)
+
+git push origin master(브랜치)
+
+!! 집에가서 할것 !! 
+vs 실행 > 터미널 열기 ctrl ~ > git clone > git-hub들어가서 code 클릭 > https 복사 > 데이터 가져올 수 있음 
+
+강사의 git-hub 주소를 slack에서 복사 : https://github.com/Divjason/sbswebclass-241015
+folk 로 찍으면 볼 수 있음 
+
+
+

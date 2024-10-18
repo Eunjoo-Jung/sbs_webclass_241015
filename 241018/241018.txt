@@ -1,0 +1,51 @@
+웹 브라우저 : html, css JS
+
+확장프로그램 Live sass compiler 는 css로 읽히도록 한다.
+Compiling(번역)
+
+ 1) reset-css (https://meyerweb.com/eric/tools/css/reset/)
+> 처음 입력 때 간격이 발생하지 않게 입력해주는 태그
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+ul, li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+2) 주석걸기
+<!-- html 에서 주석걸기 -->
+/* css에서 주석걸기 */
+회사에 들어가서는 주석 쓰면 안됨. 사이트 해킹하기 편하게 만들어줌
+
+** 태그안에 태그 표시할때 안에 넣을 태그를 드래그하고 alt W 해주기 ** 
+
+3) variables 
+> css 에 색상을 저장한다 (변수를 둔다)
+/* variables(변수) */
+:root {
+  --border-color: #ddd;
+
+컬러를 넣을때 var(--border-color)로 표시
+
+4) align-items : center 
+> 요즘 문법
+
+5) 연산을 할 수 있는 함수 
+ex) calc(매개변수vh - 매개변수px);
+
+
+6) nesting >클래스 선택자를 section안에 그냥 써도 되는것
+
+
+
+ 
+
+

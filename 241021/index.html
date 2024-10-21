@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    textarea {
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <form action="http://127.0.0.1:5500/" 
+        method="get">
+  <input placeholder="아이디입력" type="text" name="search"/>  <br/>
+  <input placeholder="패스워드입력" type="password" name="query"/><br/>  
+  <!-- radio 둘중 택 1 -->
+  <label>남성<input type="radio" name="gender" value="male"/></label>
+  <label>여성<input type="radio" name="gender" value="female"/></label>
+  <br/>
+  <label>10대<input type="radio" name="gender" value="female"/></label>
+  <label>20대<input type="radio" name="gender" value="female"/></label>
+  <label>30대<input type="radio" name="gender" value="female"/></label>
+  <label>40대<input type="radio" name="gender" value="female"/></label>
+  <br/>
+  <h2>당신이 좋아하는 엔시티 위시 노래는?</h2>
+  <label>Hands up<input type="checkbox" value="english1"/></label>
+  <label>Wish<input type="checkbox" value="english2"/></label>
+  <label>steady<input type="checkbox" value="english3" /></label>
+  <label>songbird<input type="checkbox" value="english4"/></label>
+  <br/>
+  <input type="file" />
+  <br/>
+  <input type="range"/>
+  <br/>
+  <label>출발날짜<input type="date" name="" id=""></label><br/>
+  <label>도착날짜<input type="date" name="" id=""></label>
+  <br/>
+  <select name="" id="">
+    <option selected disabled>멤버선택</option>
+    <option value="food1">리쿠</option>
+    <option value="food1">유우시</option>
+    <option value="food1">시온</option>
+    <option value="food1">사쿠야</option>
+  </select> 
+  <br/>
+  <textarea rows="10" 
+            cols="50" 
+            placeholder="당신의 의견을 남겨주세요">
+  </textarea>
+  <br/>
+  <input type="submit" />
+
+
+  </form>
+</body>
+</html>

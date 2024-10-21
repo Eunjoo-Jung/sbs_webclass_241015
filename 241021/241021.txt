@@ -1,0 +1,50 @@
+**라인을 클릭하고 alt shift 아래화살표 누르면 복사됨**
+
+form 
+- 로그인
+- 회원가입
+- 검색바
+- B/E
+
+RESTFul API 
+- GET 
+- POST
+- PULL
+- DELETE
+
+Client : Sever 측에 어떤 값을 요청하는 대상
+Server : Client 측의 요청에 의해서 어떤 액션 행위를 취하는 대상
+
+
+**Form**
+
+- input type="text",
+	     "password",  
+	     "checkbox">>복수의 값 선택,   					 		     "radio">> 둘중 택1
+	     "file" >> 파일선택,  
+	     "range">>음량조절, 
+	     "date">>날짜선택(예약사이트 등), 
+"select"와 "option"같이 사용하기. (<option selected disabled>ex)선택해주세요</option>선택전에 뜨도록 하는거)
+
+- textarea (댓글창) (<textarea placeholder="당신의 의견을 남겨주세요"></textarea>라고 쓰면 칸안에 글씨가 들어감, css에서 resize:none;으로 반드시 입력바람, rows="행높이" cols="글자수" 정의가능.
+
+- input type ="submit" << 이걸 많이 씀 (검색바) 포털사이트 기본
+- button
+
+
+**공간분할태그**
+- 웹브라우저라는 공간을 어떤 방식으로 나눠서 사용하는지를 기준으로 태그를 나누는 방식!!
+
+block 요소
+- 태생적으로 1줄에 본인만 들어갈 수 있는 욕심쟁이 태그들
+
+inline 요소
+- 태생적으로 본인의 너비값만 사용할 뿐, 1줄에 남아있는 여백(*공간)이 있으면 다른 태그들과 같이 공존해 가면서 사용이 가능. 배려심이 많은 태그들.
+
+inline-block 요소
+- 상하에 margin값을 줄 수 있는건 block뿐인데 inline-block은 inline처럼 옆에 계속 붙일 수 있는 것과 동시에 상하에 margin값도 줄 수 있다. 
+- 너비값을 받을 수 있음. (inline은 안먹히는데 inline-block은 가능)
+
+
+**https://developer.mozilla.org/ko/docs/Glossary/Semantics**
+heaer , footer, form, aside, section(하위요소 article), figure 만 알고 있어도 됨

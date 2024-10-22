@@ -1,0 +1,67 @@
+/* 전체선택자 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, 
+li {
+  list-style: none;
+}
+
+h1 {
+  background: dodgerblue;
+}
+
+/* 후손선택자는 부등호 안 쓰고 띄어쓰기 해도 적용이 가능함 , 우선권을 가지고 있음 */
+/* ul li {
+  color: crimson;
+/* } 
+
+/* 클래스선택자 */
+/* .boxitem {
+  background: #ff0;
+} */
+
+/* 속성선택자 */
+input[type="text"] {
+  background: #ff0;
+}
+
+input[type="password"] {
+  background: brown;
+}
+
+/* 동위선택자 1 */
+/* ul > a + li {
+  color: crimson;
+} */
+
+/* 동위선택자 2 */
+ul > a ~ li {
+  color: crimson;
+}
+
+/* 일반구조선택자 */
+/* body > ul:nth-child(2) {
+  color: brown;
+} */
+body > ul:nth-of-type(2) {
+  display: flex;
+  /* nest = 둥지  : 헷갈리게 또 쓰지 말고 안에 입력하자는 문법, 2023년말에 도입.*/
+  & > li {
+    padding: 15px;
+  }
+  & > li:nth-child(even) {
+    background: #ff0003;
+    /* even 이나 2n : 짝수를 나타냄  */
+  }
+  & > li:nth-child(odd) {
+    background: #800000;
+    /* odd 나 2n+1 : 홀수를 나타냄 */
+  }
+}
+
+
+

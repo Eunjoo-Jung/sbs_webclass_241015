@@ -1,0 +1,59 @@
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variables 변수 */
+:root {
+  --light-color:#fff;
+  --dark-color:#000;
+}
+
+
+/* contents */
+body {
+  /* 16px을 기준으로 쓰겠다 */
+  font-size: 16px;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(./img/bg.jpg) center/cover no-repeat ;
+  /* 여기서 사용한 rgba 안에는 밝고 바깥으로 갈수록 어두워지는 효과를 줌  */
+  
+  & > form {
+    position: relative;
+    & > input[type="submit"] {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 20px;
+      /* 실무에서는 font-size 정의할때 px을 잘 사용하지 않음, rem(rooteliment)으로 배수를 줌 . */
+      font-size: 1rem;
+      background: var(--dark-color);
+      color: var(--light-color);
+      border: 1px solid var(--light-color);
+      border-radius: 4px;
+      /* 커서 올리면 손가락모양으로 바뀜 */
+      cursor: pointer;
+      transition: background 0.8s, color 0.8s;
+      &:hover {
+        background: var(--light-color);
+        color: var(--dark-color);
+      }
+    }
+  }
+ }

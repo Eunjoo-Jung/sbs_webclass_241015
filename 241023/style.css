@@ -1,0 +1,85 @@
+h1 {
+  background: crimson;
+  &:hover {
+    color: #fff;
+  }
+  &:active {
+    color: dodgerblue;
+  }
+}
+
+/* input:enabled {
+  background: yellowgreen;
+}
+
+input:disabled {
+  background-color: brown;
+}
+
+클릭하면 색바뀜
+input:focus {
+  background: dodgerblue;
+} */
+
+/* 실무에서 많이 쓰는 상태 선택자 */
+form > input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  &:focus {
+    outline: none;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  /* 해당 a 태그를 클릭하게 된다면,  */
+  &:visited {
+    color: yellowgreen;
+  }
+
+  /* 링크선택자 */
+  &:link::after {
+    content: "--" attr(href);
+    /* attr(href)은 href의 값을 찾아온다 */
+  }
+}
+
+/* 부정선택자 , 타입이 패스워드가 아닌 애들 한테만 효과를 줘라*/
+input:not([type="password"]) {
+  background: crimson;
+}
+
+/* 반응 문자선택자 */
+.content {
+  & > p {
+    /* content안에 있는 p태그가 몇개인가에 대해 증가시켜서 그 값을 nint에 넣고 싶음 */
+    counter-increment: nint;
+  }
+
+  /* p태그 앞에다 무언가 하겠다 */
+  & > P::before {
+    content: counter(nint) ".";
+  }
+
+  & > p::after {
+    content: "-" attr(data-page) " page";
+  }
+
+  & > p::first-letter {
+    font-size: 30px;
+  }
+
+  & > p::first-line {
+    color: crimson;
+  }
+
+  /* 드래그 하면 색깔 바뀌도록 하는 거 */
+  & > p::selection {
+   background: #000;
+   color: crimson; 
+  }
+}

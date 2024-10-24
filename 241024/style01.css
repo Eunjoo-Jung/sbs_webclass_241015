@@ -1,0 +1,16 @@
+#box {
+  /* 기존에 있었던 요소를 흔적도 없이 사라지게함 */
+  /* display: none; */
+  /* 기본적인 디폴트값 */
+  /* display: block; */
+  /* 마진등의 값을 못 받음 */
+  /* display: inline;  */
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background: #ccc;
+  margin: 20px;
+  /* 기존에 있었던 요소의 흔적을 남기면서 사라지게 함*/
+  /* visibility: hidden; */
+}
+

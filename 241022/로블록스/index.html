@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/c850c829f8.js" crossorigin="anonymous"></script>
   <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c850c829f8.js" crossorigin="anonymous"></script>
+  <!-- custom css & JS -->
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js"></script>
-  <!-- custom css & JS -->
   <title>로블록스 만들기</title>
 </head>
 <body>
@@ -80,14 +80,26 @@
           <article class="gender">
             <span>성별선택사항</span>
             <div id="gender_btn">
-              <button id="femalebtn">
+              <button id="femaleBtn">
                 <i class="fa-solid fa-person-dress"></i>
               </button>
-              <button id="malebtn">
+              <button id="maleBtn">
                 <i class="fa-solid fa-person"></i>
               </button>
               <!-- font awesome 사이트 사용하기  -->
             </div>
+          </article>
+
+          <article class="checkbox">
+            <label for="agree">
+              <input type="checkbox" name="agree" id="agree" />
+              <!-- id와 label의 값이 같으면 글자를 눌러도 체크가 됨 -->
+              이용약관을 검토했으며 이에 동의합니다.
+            </label>
+            <label for="private">
+              <input type="checkbox" name="private" id="private" />
+              개인정보 처리방식에 동의합니다.
+            </label>
           </article>
 
         </div>

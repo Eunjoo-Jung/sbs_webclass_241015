@@ -1,0 +1,50 @@
+Lofi(Low Fidelity) Wire frame 페이지
+
+UX/UI 기획자
+
+웹디자이너
+
+웹퍼블리셔
+
+프론트엔드
+
+백엔드
+
+폴스텍 개발
+
+
+1. Background 
+- html // css
+- 배경 스타일 정의
+- background : color image position/size repeat 순서로 입력
+
+- background-image
+- background-color
+- background-position
+- background-size
+- background-repeat
+
+
+2. font 속성
+
+* 구글검색창에 구글폰트 -> filter -> Language -> Korean -> Get font -> Get embed code -> @import 클릭 -> @import 주소 복사 -> style.css 파일의 가장 앞에 붙여넣기, 
+CSS class 에서  font-family 복사 -> style.css 해당 칸에 복사 *
+
+*사이트에서 폰트 가져오고 싶을 때 -> 사이트 접속 -> ctrl + Shift + J -> Network -> Font -> 폰트 더블클릭하면 다운로드됨 -> otf woff 변환 사이트 접속 -> 
+* OTF(어도비 + 마이크로소프트사 폰트 형식 & 규격, Open Type Font) // 1990년대 , 맥 
+vs 
+TTF (애플+마이크로소프트사 폰트 형식 & 규격, True Type Font) //1980년대 , 2차 배지에(곡선이라는 독일어) , 윈도우  * 
+
+- font-size : 폰트의 크기
+- font-weight : 폰트의 두께
+- font-family :
+  - thin (200)
+  - light (300)
+  - normal (400)
+  - bold (600)
+  - extra bold (800)
+- font-style : italic(기울임) // 정상
+- text-align : 수평정렬 (*가로정렬)
+- line-height : 글자 높이 길이 정의 (수직정렬 하는 거 아님)
+- text-decoration : 
+  - a 태그는 under-line이 무조건 들어가므로 text-decoration을 none으로 지정해야함

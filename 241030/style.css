@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+}
+main {
+  width: 400px;
+  height: 140px;
+  border: 3px solid #ccc;
+  position: relative;
+
+  div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    border: 1px solid #000;
+    &:nth-child(1) {
+      background: #ff0;
+      top: 10px;
+      left: 10px;
+      z-index: 3;
+    }
+    &:nth-child(2) {
+      background: #f0f;
+      top: 50px;
+      left: 50px;
+      z-index: 2;
+    }
+    &:nth-child(3) {
+      background: #00f;
+      top: 90px;
+      left: 90px;
+      z-index: 1;
+    }
+  }
+}

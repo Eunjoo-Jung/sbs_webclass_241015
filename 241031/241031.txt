@@ -1,0 +1,60 @@
+//정리 //
+
+HTML5
+- attribute // value
+- h
+- p
+- a
+- ul, ol, li
+- table, tr, td, th
+- hr
+- br
+- img
+- audio
+- video
+- sementic : main / section / nav / header / aside / footer
+- 공간분할태그
+
+CSS3
+1)선택자
+- 전체선택자
+- 태그선택자
+- 후손선택자
+- 자손선택자
+- 링크선택자
+- ID선택자
+- class선택자
+- 구조선택자
+> 일반구조선택자
+> 형태구조선택자
+- 반응선택자
+- 속성선택자
+- 동위선택자
+- 문자선택자
+> 전후문자선택자
+- 부정선택자
+- data- : 커스텀선택자
+
+2) 속성
+- 단위속성 : px / rem / em / % / vw / vh
+- 색상속성 : 색상명 / # / rgb / rgba
+- 가시속성 
+  > display ( none / block / inline / inline-block )
+  > visibility ( visible / hidden )
+  > opacity ( 0 ~ 1 )
+- 박스속성 :
+  > box-sizing : border-box / content-box
+  > margin
+  > padding
+- border : border-width / style / color
+- background : color / image / size / position / repeat
+- font : font-size / weight / familt / text-align / line-height
+- position : static / relative / absolute / fixed / sticky
+  > z-index / overflow : hidden / scroll
+- float : left & right
+- shadow : text / box
+- gradient
+
+
+
+

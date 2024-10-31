@@ -32,7 +32,7 @@ body {
 
 #wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(./img/bg.jpg) center/cover no-repeat ;
   /* 여기서 사용한 rgba 안에는 밝고 바깥으로 갈수록 어두워지는 효과를 줌  */
   
@@ -45,7 +45,7 @@ body {
     align-items: center;
     top: 20px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     & > input[type="submit"] {
       position: absolute;
       top: 20px;
@@ -145,9 +145,19 @@ body {
               background: var(--dark-color);
               color: var(--light-color);
               padding: 0 10px;
+              transition: box-shadow 0.3s;
+              &::placeholder {
+                opacity: none;
+                /* box-shadow: 0 0 2px rgba(30, 144, 255, 0.8); */
+              }
               &:focus {
                 outline: none;
                 /* > 클릭했을때 두꺼워지지 않게 함 */
+                box-shadow: 0 0 8px rgba(30, 144, 255, 0.8);
+                &:placeholder {
+                  opacity: 0;
+                }
+                /* 클릭시 칸 바깥에 그림자 생김 */
               }
             }
           }
@@ -224,6 +234,7 @@ body {
             display: block;
             font-size: 1.1rem;
             margin-bottom: 6px;
+            cursor: pointer;
             input[type="checkbox"] {
               scale: 1.4;
               margin: 0 5px 5px 0;
@@ -247,6 +258,9 @@ body {
               background: var(--light-color);
               color: var(--dark-color);
             }
+            &:nth-child(2) {
+              display: none;
+            }
           }
         }
       }
@@ -267,6 +281,7 @@ body {
           color: var(--light-color);
           padding: 10px;
           display: flex;
+          justify-content: center;
           gap: 10px;
           border: 1px solid var(--light-color);
           border-radius: 8px;
@@ -278,9 +293,28 @@ body {
           .right-content {
             display: flex;
             flex-direction: column;
+            .content-title {
+              font-size: 0.8rem;
+            }
+
+            @media screen and (max-width: 440px) {
+              #wrapper {
+                width: 100%;
+                height: 100%;
+                & > form {
+                  width: 100%;
+                  height: 100%;
+                  & > input[type="submit"] {
+                    display: none;
+                  }
+                  
+                }
+              }
+            } 
+            }
           }
         }
       }
     }
   }
- }
+/* 걍 쌤꺼 보고 다시 다 쓰는게 나을거같음. 놓치고 나선 걍 노답임.. */

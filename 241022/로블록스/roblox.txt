@@ -1,0 +1,7 @@
+배포하다 : deploy
+ > server 
+ > 서버를 빌려서 사용
+ > dothome // cafe24 // netlify // github // * google 제공 firebase // amazon 제공 aws
+ > mobile / tablet => 확장프로그램 (*mobile simulator) 설치 해야함
+ * 설치방법 : 사이트 오른쪽 점 세개 -> 확장프로그램 -> 크롬웹스토어 -> mobile simulator 설치 -> 동기화 절대 하지마셈 -> 확장 프로그램 -> 세부정보 -> 툴바에 고정 *
+cross browsing (크로스 브라우징) -> 여러기종 돌려가며 해보기 

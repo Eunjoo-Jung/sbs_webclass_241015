@@ -15,19 +15,6 @@ a {
   color: inherit;
 }
 
-input {
-  appearance: none;
-  -webkit-appearance:none;
-  -webkit-boner-radius:0;
-}
-
-select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance: none;
-  cursor: pointer;
-}
-
 /* variables */
 :root {
   --light-color: #fff;

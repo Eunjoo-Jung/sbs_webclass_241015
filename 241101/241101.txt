@@ -1,0 +1,12 @@
+gnb = Global Navigation Banner (Bar)
+> 웹 페이지를 제작, 메인이 되는 배너
+lnb = Local Navigation Banner (Bar)
+> 소제목 혹은 부타이틀이 되는 배너
+
+input id = label for
+checkbox는 여러개 가능,
+tap은 둘중하나만 가능 / checked 하면 이미 체크가 된 상태로 뜸
+
+길을 잃었다.. 다시 코드 보고 하시길...
+샹
+..... 

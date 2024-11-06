@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- radio 버튼은 택1의 성질을 가지고 있음, name값이 동일해야지만 택1을 할 수 있는 요소가 됨 -->
+<main class="tab-inner">
+    <input id="tab1" type="radio" name="tabmenu" checked/>
+    <input id="tab2" type="radio" name="tabmenu"/>
+    <input id="tab3" type="radio" name="tabmenu"/>
+  <div class="tabs">
+      <div class="items">
+        <div>
+          <h1>Portfolio side / #01</h1>
+        </div>
+        <div>
+          <h1>Portfolio side / #02</h1>
+        </div>
+        <div>
+          <h1>Portfolio side / #03</h1>
+        </div>
+      </div>
+  </div>
+    <div class="btn">
+      <label for="tab1">Grapic</label>
+      <label for="tab2">Publishing</label>
+      <label for="tab3">Logo & CI</label>
+    </div>
+</main>
+</body>
+</html>

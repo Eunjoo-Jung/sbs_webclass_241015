@@ -1,0 +1,60 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-perspective: 400px;
+  // > 더 원근감있고 입체감 있게 효과를 넣음
+  main {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    // 공간감을 갖게 함
+    animation: motion 3s linear infinite;
+    div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+      // backface-visibility: hidden;
+      // > 뒷면이 관통되지 않게 함
+      &:nth-child(1) {
+        background: #bc143c;
+        transform: rotateY(0deg) translate3d(0, 0, 100px);
+      }
+      &:nth-child(2) {
+        background: yellowgreen;
+        transform: rotateY(90deg) translate3d(0, 0, 100px);
+      }
+      &:nth-child(3) {
+        background: dodgerblue;
+        transform: rotateY(180deg) translate3d(0, 0, 100px);
+      }
+      &:nth-child(4) {
+        background: gold;
+        transform: rotateY(270deg) translate3d(0, 0, 100px);
+      }
+      &:nth-child(5) {
+        background: #a52a2a;
+        transform: rotateX(90deg) translate3d(0, 0, 100px);
+      }
+      &:nth-child(6) {
+        background: #ffc0cb;
+        transform: rotateX(270deg) translate3d(0, 0, 100px);
+      }
+    }
+  }
+}
+
+@keyframes motion {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

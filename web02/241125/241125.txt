@@ -1,0 +1,6 @@
+1. slick slider -> get it now -> Download Now -> 압축 풀기 -> slick.min.js / slick.css / slick-theme.css
+2. jQuery -> download jQuery -> Download jQuery 3.7.1 -> 오른쪽마우스 -> 다른이름으로 저장
+
+
+**react.js 끝나고 next.js가 더 좋음 프론트엔드 시장에서는..
+

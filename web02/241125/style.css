@@ -1,8 +1,11 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,
@@ -22,24 +25,30 @@ body {
   color: #222;
 }
 
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
 /* contents */
 .container {
   width: 100%;
   height: 3000px;
 }
-.container header {
+
+/* header */
+header {
   width: 100%;
-  color: #ddd;
   position: fixed;
   transition: all 0.3s;
 }
-.container header .banner {
+header .banner {
   width: 100%;
   height: 40px;
   background: #000;
   color: #ddd;
 }
-.container header .banner .lnb {
+header .banner .lnb {
   width: 1300px;
   height: 100%;
   margin: 0 auto;
@@ -48,7 +57,7 @@ body {
   align-items: center;
   gap: 10px;
 }
-.container header .top-info {
+header .top-info {
   width: 1300px;
   margin: 0 auto;
   padding: 10px 0;
@@ -56,25 +65,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.container header .top-info .gnb {
+header .top-info .gnb {
   display: flex;
   gap: 20px;
   color: #ddd;
   transition: all 0.3s;
 }
-.container header .top-info .gnb li > a:hover {
+header .top-info .gnb li > a:hover {
   color: crimson;
 }
-.container header.active {
+header.active {
   background: #ddd;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-.container header.active .banner {
+header.active .banner {
   height: 0px;
   overflow: hidden;
 }
-.container header.active.top-info.gnb {
-  color: #000;
+header.active .top-info .gnb {
+  color: #222;
 }
 
 /* intro */
@@ -94,11 +103,157 @@ body {
   text-align: center;
 }
 .intro .inner .heading h1 {
-  font-size: 4.7rem;
+  font-size: 4.6rem;
   margin-bottom: 40px;
 }
 .intro .inner .heading p {
   font-size: 1.3rem;
   padding: 0.15px;
   line-height: 2rem;
+}
+
+/* about */
+.about-content {
+  width: 100%;
+  display: flex;
+  padding: 150px 0;
+}
+.about-content > div {
+  padding: 30px;
+}
+.about-content > div .desc {
+  text-align: center;
+  flex: 3;
+}
+.about-content > div .desc h2 {
+  font-size: 2rem;
+}
+.about-content > div .desc p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px 0;
+}
+.about-content > div .desc a {
+  color: orange;
+  font-weight: bold;
+}
+.about-content > div .desc a:hover {
+  text-decoration: underline;
+}
+.about-content > div .photo {
+  flex: 2;
+}
+.about-content > div .photo img {
+  width: 100%;
+  border-radius: 40% 60% 65% 35%;
+}
+
+/* ranking */
+.ranking {
+  width: 100%;
+  height: 860px;
+  background: #f8f8f8;
+}
+.ranking .ranking-content {
+  padding: 100px 0 25px;
+}
+.ranking .ranking-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.ranking .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ranking .items .item {
+  width: 390px;
+  height: 600px;
+  border-radius: 50px 0 50px 0;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.ranking .items .item .up-image {
+  width: 100%;
+  height: 285px;
+}
+.ranking .items .item .up-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ranking .items .item .down-desc {
+  padding: 50px 25px 25px;
+}
+.ranking .items .item .down-desc .badge {
+  display: inline-block;
+  color: #ddd;
+  padding: 2px 10px;
+  font-size: 1rem;
+}
+.ranking .items .item .down-desc .badge.good {
+  background: #e60012;
+}
+.ranking .items .item .down-desc .badge.must {
+  background: #002029;
+}
+.ranking .items .item .down-desc h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.ranking .items .item .down-desc h3 p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.ranking .items .item .down-desc h3 .btn-explore {
+  color: orange;
+  font-weight: 500;
+}
+.ranking .items .item .down-desc h3 .btn-explore img {
+  transition: all 0.3s;
+}
+.ranking .items .item .down-desc h3 .btn-explore:hover img {
+  margin-left: 10px;
+}
+
+/* Testimonial */
+.testimonial {
+  padding: 100px 0;
+}
+.testimonial .testimonial-content {
+  text-align: center;
+}
+.testimonial .testimonial-content h2 > p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: appearance;
+}
+.testimonial .testimonial-content hr {
+  width: 120px;
+  height: 4px;
+  border: none;
+  background: dodgerblue;
+  margin: 30px auto;
+}
+.testimonial .testimonial-content .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .testimonial-content .client img {
+  width: 85px;
+  border-radius: 50%;
+}
+.testimonial .testimonial-content .client span {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  text-align: left;
+}
+.testimonial .testimonial-content .client span b {
+  display: block;
+}
+.testimonial .testimonial-content .comment {
+  font-size: 1rem;
+  line-height: 1.7rem;
 }

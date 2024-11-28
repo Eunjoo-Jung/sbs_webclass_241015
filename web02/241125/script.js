@@ -44,3 +44,10 @@ $(".myslider").slick({
     // instead of a settings object
   ],
 });
+
+// toggle menu
+const trigger = document.querySelector(".trigger");
+trigger.addEventListener("click", () => {
+  trigger.classList.add("active");
+  document.querySelector(".gnb").classList.toggle("active");
+});

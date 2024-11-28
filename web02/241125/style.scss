@@ -27,27 +27,83 @@ $section-bg-color: #f8f8f8;
 
 /* common */
 body {
+  min-width: 1300px;
+  // overflow-x: hidden; 은 쓰면 안됨
   font-size: 15px;
   color: $main-text-color;
-}
-
-.post-image {
-  width: 360px;
-  border-radius: 30px 0 30px 0;
-  overflow: hidden;
-  img {
-    width: 100%;
-  }
-}
-
-.post-desc {
-  flex: 1;
-  padding: 0 20px;
 }
 
 .inner {
   width: 1300px;
   margin: 0 auto;
+}
+
+.btn-explore {
+  color: orange;
+  font-weight: 500;
+  display: inline-block;
+  img {
+    transition: all 0.3s;
+  }
+  &:hover img {
+    margin-left: 15px;
+  }
+  &.btn-blog {
+    margin: 30px 0;
+  }
+}
+
+.blog-header h6,
+.recent-post-items h6,
+.shared-post-items h6 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #00a0e9;
+}
+
+.recent-post-items h6,
+.shared-post-items h6 {
+  margin-bottom: 30px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid $main-light-color;
+  margin-bottom: 30px;
+}
+
+.post-content .divider {
+  margin: 30px 0;
+}
+
+.post-item {
+  display: flex;
+  .post-image {
+    width: 360px;
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .post-desc {
+    flex: 1;
+    padding: 0 20px;
+    h3 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin: 4px 0 8px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      span {
+        display: block;
+        font-size: 0.8rem;
+        color: $main-light-color;
+      }
+    }
+  }
 }
 
 /* contents */
@@ -92,6 +148,9 @@ header {
       li > a:hover {
         color: crimson;
       }
+    }
+    .trigger {
+      display: none;
     }
   }
   &.active {
@@ -220,25 +279,13 @@ header {
           font-size: 1rem;
           margin-bottom: 15px;
         }
-        .btn-explore {
-          color: orange;
-          font-weight: 500;
-          display: inline-block;
-          padding: 40px 0;
-          img {
-            transition: all 0.3s;
-          }
-          &:hover img {
-            margin-left: 15px;
-          }
-        }
       }
     }
   }
 }
 
 /* testimonial */
-.testimonial {
+.testomonial {
   padding: 100px 0;
   .testimonial-content {
     text-align: center;
@@ -283,13 +330,20 @@ header {
 .callaction {
   width: 100%;
   height: 450px;
-  background: url("./images/callaction-01.jpg") cover/center no-repeat;
+  background: url("./images/callaction-01.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   &::before {
     content: "";
-    background: linear-gradient();
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(160, 8, 160, 0.5),
+      rgba(6, 87, 24, 0.8)
+    );
     position: absolute;
     top: 0;
     left: 0;
@@ -299,7 +353,7 @@ header {
     color: $main-light-color;
     text-align: center;
     h2 {
-      font-size: 1.2rem;
+      font-size: 3.2rem;
       font-weight: 300;
       line-height: 3.8rem;
       letter-spacing: -1px;
@@ -309,7 +363,7 @@ header {
       }
     }
     a {
-      background: #22cc72;
+      background: #2ecc71;
       padding: 10px 20px;
       border-radius: 8px;
       font-size: 1.2rem;
@@ -322,14 +376,9 @@ header {
   padding: 100px 0;
   .blog-content {
     .blog-header {
-      h6 {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        color: #00a0e9;
-      }
       h2 {
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 3.2rem;
         text-align: center;
         margin: 50px 0;
         font-weight: 600;
@@ -339,31 +388,14 @@ header {
         line-height: 1.8rem;
       }
     }
-    .divider {
-      border: none;
-      border-bottom: 1px solid $main-light-color;
-      margin-bottom: 30px;
-    }
     .post-content {
       display: flex;
+      gap: 10px;
       .shared-post-items {
         .post-item {
           flex-direction: column;
           .post-desc {
             padding: 0;
-            h3 {
-              font-size: 1.6rem;
-              text-transform: uppercase;
-            }
-            h {
-              font-size: 1.2rem;
-              line-height: 2rem;
-              span {
-                display: block;
-                font-size: 0.3rem;
-                color: $main-light-color;
-              }
-            }
           }
         }
       }
@@ -371,7 +403,7 @@ header {
   }
 }
 
-/* festivals */
+/* festival */
 .festival {
   width: 100%;
   height: 270px;
@@ -382,9 +414,9 @@ header {
   .festival-heading {
     text-align: center;
     color: $main-light-color;
-    h6 {
+    h3 {
       text-transform: uppercase;
-      font-size: 1.75rem;
+      font-size: 1.73rem;
       font-weight: 300;
       margin-bottom: 30px;
       span {
@@ -399,12 +431,115 @@ header {
         color: $main-text-color;
         margin: 5px;
         padding: 6px;
-        border-radius: 6px;
+        font-size: 1.1rem;
+        border-radius: 5px;
         &:nth-child(1) {
-          background: gold;
+          background: #fac53b;
         }
         &:nth-child(2) {
-          background: #ddd;
+          background: #ededed;
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  background: $main-dark-color;
+  padding: 30px 0;
+  .footer-content  {
+    display: flex;
+    color: $main-light-color;
+    ul {
+      text-align: center;
+      &.comunity {
+        flex: 1;
+      }
+      &.network {
+        flex: 1;
+      }
+      &.help {
+        flex: 2;
+        li:last-child {
+          color: #fff;
+          margin-top: 35px;
+        }
+      }
+    li {
+      &:first-child {
+        color: #959595;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+}
+
+/* responsible */
+@media screen and (max-width: 768px) {
+  header {
+    .banner {
+      display: none;
+    }
+    .top-info {
+      .gnb {
+        flex-direction: column;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        text-align: right;
+        padding: 80px 10px 0 0;
+        color: $main-text-color;
+        box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.2);
+        transition: all 0.3s;
+        &.active {
+          right: 0;
+        }
+      }
+      .trigger {
+        display: block;
+        width: 30px;
+        height: 16px;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        cursor: pointer;
+        span {
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: #000;
+          &:nth-child(1) {
+            top: 0;
+          }
+          &:nth-child(2) {
+            top: 50%;
+          }
+          &:nth-child(3) {
+            top: 100%;
+          }
+        }
+        &.active {
+          // trigger가 active를 받는다면
+          span {
+            &:nth-child(1) {
+              top: 50%;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              top: 50%;
+              transform: rotate(-45deg);
+            }
+          }
         }
       }
     }

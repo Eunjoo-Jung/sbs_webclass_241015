@@ -1,0 +1,18 @@
+
+&copy; -> ©
+
+* 정말 중요한 요소 *
+min-width; : 현재 작업중인 웹 사이트의 너비값을 최소 몇까지 반응하게 할 것인가? 
+max-width; : 현재 작업중인 웹 사이트의 너비값을 최대 몇까지 반응하게 할 것인가?
+
+media-query
+
+media : 매체 -> 개발자가 작업한 현재 페이지를 사용자가 보고자 하는 기기 device 
+
+어본코리아 사이트 참고해서 
+
+ * display와 opacity의 차이점
+opacity는 transition을 사용할 수 있음
+
+absolute도 absolute를 받아 쓸 수 있음 
+꼭 relative absolute로 쓸 필요는 없음 

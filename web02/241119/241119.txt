@@ -4,7 +4,7 @@ Flex
 flex-direction : 중심축 가로 // 세로 row // column 
 
 2. 중심축으로 정렬 : default 중심축 가로 (*row)
- - justify-content : flex-start / center / flex-end / space-between /space-around (각각의 둘레의) /space-evenly
+ - justify-content : flex-start / center / flex-end / space-between /space-around (각각의 둘레에 같은 여백을 가질때) /space-evenly(양쪽이 다 통으로 값이 똑같을 때)
 - justify-items : flex-start / center / flex-end
 - content : flex들을 하나의 content 그룹으로 간주하고 정렬
 - item : item들 개별적으로 정렬

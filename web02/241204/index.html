@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid grammar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .parent {
+      border: 5px solid #000;
+      background: lemonchiffon;
+      width: 100%;
+      height: 500px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* > 3개의 열을 만들겠다 */
+      div {
+        &.item1 {
+          background: crimson;
+          /* grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2; */
+          grid-area: 1/1 / 2/3;
+        }
+        &.item2 {
+          background: yellowgreen;
+          /* grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 3; */
+          grid-area: 1/2 / 3/3;
+          z-index: 1;
+        }
+        &.item3 {
+          background: dodgerblue;
+          /* grid-column-start: 2;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 3; */
+          grid-area: 2/2 / 3/4;
+        }
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+  </div>
+</body>
+</html>

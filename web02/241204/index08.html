@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 상향식 방식 : 작은것부터 만들기 / 작은것들을 모아서 하나의 그룹 만들기 / 그위의 그룹 만들기 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      .best-seller {
+        width: 1200px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px;
+        border-radius: 20px;
+        .best-header {
+          font-size: 22px;
+        }
+        .items-inner {
+          display: grid;
+          /* grid-template-columns: auto auto auto; 바로 밑 방식이랑 똑같음*/
+          grid-template-columns: repeat(3, auto);
+          grid-gap: 15px;
+          .item {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            .name {
+              span {
+                display: block;
+                color: royalblue;
+                transition: color 0.3s;
+              }
+              &:hover {
+                span {
+                  color: crimson;
+                }
+              }
+            }
+          }
+        }
+        .view-more {
+          color: crimson;
+          display: block;
+          text-align: right;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="best-seller">
+      <h4 class="best-header">Best Seller</h4>
+      <div class="items-inner">
+        <div class="item">
+          <img src="./images/best-item-01.png" alt="img1"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-02.png" alt="img2"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-03.png" alt="img3"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-04.png" alt="img4"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-05.png" alt="img5"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-06.png" alt="img6"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-07.png" alt="img7"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-08.png" alt="img8"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-09.png" alt="img9"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-10.png" alt="img10"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-11.png" alt="img11"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/best-item-12.png" alt="img12"/>
+          <div class="name">
+            best home appliese #01 <span>$259</span>
+          </div>
+        </div>
+      </div>
+      <a class="view-more" href="#">view more</a>
+  </div>
+</div>
+</body>
+</html>

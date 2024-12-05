@@ -1,0 +1,30 @@
+@import "./reset03.scss";
+
+@import "./variables03.scss";
+
+@import headline {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  span {
+    color: dodgerblue;
+  }
+  &::after {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-300);
+
+}
+
+/*contents */
+
+.news-heading {
+  @include headline;
+}
+
+.heading {
+  @include headline;
+}

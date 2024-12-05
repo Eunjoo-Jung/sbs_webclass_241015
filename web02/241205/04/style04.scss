@@ -1,0 +1,40 @@
+@import "./reset04";
+
+@import "./varibles04"
+
+@mixin buttonstyle {
+  border: 3px solid $main-dark-color;
+  color: $main-blue-color;
+  display: inline-block;
+  width: 150px;
+  padding: 7px;
+  background: $main-white-color;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s;
+  &:hover {
+    background: $main-light-color;
+    color: $main-dark-color;
+    border: 3px solid transparent;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete {
+  @include buttonstyle;
+}
+
+.roading {
+  @include buttonstyle;
+}
+
+.error {
+  @include buttonstyle;
+}

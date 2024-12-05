@@ -1,0 +1,16 @@
+/* reset css */
+@import "/scss/reset";
+
+/* variables */
+@import "/scss/variables";
+
+.frame {
+  width: 20px;
+  border: 1px solid ;
+  align-items: center;
+  .heading {
+    font-size: 30px;
+    line-height: normal;
+    color: crimson;
+  }
+}

@@ -1,0 +1,29 @@
+/* reset */
+@import "./scss/reset.scss";
+
+/* variables */
+@import "./scss/variables.scss";
+
+/* contents */
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame div {
+  border: 1px solid $main-dark-color;
+  margin: 5px;
+  padding: 5px;
+}
+
+// V 1부터 9까지의 값을 i라는 변수에 넣겠다는 뜻
+@for $i from 1 through 9 {
+  .frame div:nth-child(#{$i}) {
+    width: 50px * $i;
+    // 간격이 50px씩 증가함
+  }
+}
+

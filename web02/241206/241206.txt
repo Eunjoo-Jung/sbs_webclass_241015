@@ -7,7 +7,7 @@
 *등차수열 : 일정한 비율로 숫자들의 배열이 증가하는 값을 띄고 있음
 
 - 구글아이콘 쓰기
-link로 시작하는 link 중에 http://~outlined까지 복사해서  @import url()로 scss 붙여넣기
+link로 시작하는 link 중에 http://~outlined까지 복사해서  @import url( )로 scss 붙여넣기
  아이콘 하나하나는 span태그로 html에 넣기
 
 * input밖에 label태그를 싸면 굳이  for로 연결안시켜도 연결이 된다.  

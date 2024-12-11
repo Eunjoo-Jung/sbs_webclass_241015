@@ -1,0 +1,9 @@
+java 객체지향 => 따라한 언어
+
+.class => 이름표
+#id => 이름표
+void tag 
+
+html 왕국 -> 왕 -> html
+신분제도=> 조선시대
+왕 => 왕족(tag) => 양반(id) => 천민(class)

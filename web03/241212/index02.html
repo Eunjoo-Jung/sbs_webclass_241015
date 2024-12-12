@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자바스크립트04</title>
+  <script>
+    // 제어문 01 조건문 만약에?
+    // 프로그램에서 중괄호{}는 해야할일
+
+    /*
+    let num1 = prompt("첫번째 정수를 입력하세요","예:10");
+    let num2 = prompt("두번째 정수를 입력하세요","예:10");
+
+
+    if(num1>num2) {
+      document.write("첫번째정수"+num1+"이 두번째 정수 "+num2+"보다 크다");
+    }else{
+      document.write("두번째 정수"+num2+"가 첫번째 정수 "+num1+"보다 크다");
+      }
+      */
+/*
+    let a = 10;
+    let b = 20;
+    let c = 30;
+
+    if(a>b) {
+      document.write("a가b보다 크다");
+    }else if(b>c) {
+      document.write("b가 c보다 크다");
+    }else if(b>c) {
+      document.write("b가 c보다 작다");
+    }else {
+      document.write("어쩌라는거");
+    }
+*/
+
+/*
+  //if문안에 if문 들어가기=> if in
+    let mon = prompt("명재는 몇 월입니까?");
+    if(mon>=1 && mon<=12) {
+      if(mon>=9 && mon<=11) //&&앤드연산자 //두개의 조건값이 모두 참일때만 실행
+    {
+      document.write("독서의 계절 가능입니다");
+    }else if(mon>=6 && mon<=8) {
+      document.write("여름입니다");
+    }else if(mon>=3 && mon<=5) {
+      document.write("봄봄봄 입니다");
+    }else {
+      document.write("겨울입니다");
+    }
+    }else{
+      alert("1~12까지의 정수만 입력해 주세요ㄱㅡ");
+      location.reload(); //새로고침
+    }
+  */
+
+  /*
+  //내가 좋아하는 숫자를 입력하면 그 수가 짝수인지 홀수인지 분별하여 출력해 주는 프로그래밍을 코딩하기
+  let num = prompt("당신이 좋아하는 숫자는?");
+  if(num%2==0) {
+    document.write("짝수입니다");
+  }else if(num%2==1) {
+    document.write("홀수입니다");
+  }
+
+  //선생님 답 
+  let num = prompt("당신이 좋아하는 숫자는?");
+  if(num%2==0) {
+    document.write("짝수입니다");
+  }else{
+    document.write("홀수입니다");
+  }
+    */
+
+
+    //한줄짜리 제어문은 {}생략을 허용
+    /*
+  let year = prompt("연도를 입력하세요");
+  
+  if((year%4== 0 && year%100 !=0) || year%400==0)
+    alert(year+"년은 윤년입니다");
+  else 
+    alert(year+"년은 평년입니다");
+*/
+
+/*
+let n1 = prompt("정수를 입력하세요");
+let n2 = prompt("정수를 입력하세요");
+
+    if(n2==0) {
+      alert("0으로 나눌 수 없어요");
+      //*모든 프로그램은 0으로 나눌 수 없음 
+    }else {
+      let n3 = n1/n2;
+      alert("결과는"+n3+"입니다");
+    }
+*/
+/*
+let score = prompt("국어성적은?");
+let scor = prompt("수학성적은?");
+let sco = prompt("영어성적은?");
+
+let avg = 3/(score+scor+sco);
+
+if(avg >= 90)
+  document.write("합격 A학점");
+else if(avg >= 70)
+  document.write("합격 B학점");
+else if(avg >= 50)
+  document.write("합격 C학점");
+else
+    document.write("불합격 F학점");
+//에러발생함
+*/
+
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

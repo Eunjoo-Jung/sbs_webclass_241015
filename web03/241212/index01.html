@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자바스크립트 03</title>
+  <script>
+  /* let num1 = 10;
+    let num2 = 20;
+  let result;*/
+
+  // num1--; //num1-1 => 9
+  // document.write(num1,"<br>");
+
+  // num1++; //num1+1 => 10
+  // document.write(num1,"<br>");
+
+  // result=num2++; //20
+  // document.write(result,"<br>");
+
+  // result=++num2; //22
+  // document.write(result,"<br>");
+
+  // ++는 1씩 증가
+  // --는 1씩 감소
+
+  // let a =10;
+  // let b =20;
+  // let c =10;
+  // let f ="20";
+  // let result;
+
+  // result = a>b; //false
+  // document.write(result+"<br>");
+
+  // result = a<b; //true
+  // document.write(result+"<br>");
+
+  // result = a=b; //true
+  // document.write(result+"<br>");
+
+  // result = b==f; //true //데이터의 타입이 나눠져 있지 않기때문
+  // document.write(result+"<br>");
+
+  // result = b===f; //false //=3개를 넣으면 데이터의 타입까지 나눠져서 다시 보게 됨
+  // document.write(result+"<br>");
+
+  // result = a!=b; //프로그래밍에서 !는 항상 부정을 의미
+  // document.write(result+"<br>");
+
+  // let t="table border='1'"; //''안에 ""는 불가함
+  // t += "<tr>";
+  // t += "<td>1<td/><td>2<td/><td>3<td/>";
+  // t += "</tr>";
+  // t += "</table>";
+
+  // document.write(t);
+
+  /*let height = 180;
+  let weight = 74;
+  let my = 60;
+
+  let avg = (height-100)*0.9; // 평균체중이 나옴
+  document.write("홍길동 님의 평균 체중은 "+avg+"이고 홍길동님의 실체중은 "+weight+"입니다 <br>"+(weight-avg)+"키로 홍길동님이 감량해야 할 체중입니다");*/
+  //홍길동 님의 평균 체중은 72이고 홍길동님의 실체중은 74입니다
+  //2키로 홍길동님이 감량해야 할 체중입니다
+
+  </script>
+</head>
+<body>
+  <h1 id="heading">자바스크립트</h1>
+  <p id="text">
+    위 텍스트를 클릭해 보세여
+  </p>
+
+  <script>
+    //외워야하는 문법☆
+    let head = document.querySelector("heading");
+    head.onclick = function() {
+      this.style.color="red";
+    }
+    // 여기서 this는 head를 의미한다.
+  </script>
+</body>
+</html>

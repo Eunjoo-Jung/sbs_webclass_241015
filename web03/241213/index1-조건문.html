@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자바스크립트 05</title>
+  <script>
+    /*
+    let num1 = 10;
+    let num2 = 20;
+    let temp;
+
+    document.write(num1,num2,"<br>"); //1020
+
+  temp = num1;
+  num1 = num2;
+  num2 = temp;
+
+  document.write(num1,num2); //2010
+    */
+
+/*
+  // 삼항 연산자 : 항이 3개
+
+  let input = prompt("숫자를 입력해주세요");
+  let number = Number(input); //함수 안에 들어가 있는 값을 인수(임자값)라고 부름
+
+  if(number > 0)
+    alert("자연수입니다");
+  else
+    alert("자연수가 아닙니다");
+//>ex) 주민번호를 입력하세요
+*/
+
+/*
+if문의 축약형
+let number = Number (prompt("숫자를 입력하세요"));
+
+(number > 0) ? alert("자연수 입니다") :  alert("자연수가 아닙니다");
+//넘버가 0보다 크면 ?(if) alert 자연수입니다 :(else,또는) alert 자연수가 아닙니다
+*/
+
+/*
+let number = Number (prompt("숫자를 입력하세요"));
+(number > 0) || alert("자연수가 아닙니다"); //두 항중에 값이 하나라도 낮으면 참
+(number > 0) && alert("자연수입니다"); //두 항의 값이 같으면 참
+*/
+
+/*
+let id = prompt("아이디를 입력하세요");
+let pw = prompt("비밀번호를 입력하세요");
+let myid = "오시온";
+let mypw = 1234;
+
+if(myid == id && mypw == pw) {
+  alert("로그인성공");
+}else if(myid == id || mypw == pw){
+
+}else{
+
+}
+*/
+
+
+/*
+if(myid == id) {
+  alert("아이디가 맞아요");
+  if(mypw == pw) {
+    alert("패스워드가 맞아요");
+    alert("로그인을 축하해요!");
+}else {
+  alert("아이디를 다시 입력하세요");
+}
+}else {
+  alert("비밀번호를 다시 입력하세요");
+}
+*/
+
+
+//★ 문제 - 좀 이상함 카페 보고 다시 정리하셈
+// 띄어쓰기도 문자로 취급
+let username = prompt("방문자의 이름을 입력하세요");
+let pw = prompt("비밀번호를 입력하세요");
+let myname = "가나디";
+let mypw = 1234;
+
+
+if(username == myname && pw == mypw) {
+  alert("로그인 성공! 최종 테스트를 시작합니다");
+
+  let height = prompt("당신의 키는?");
+  let weight = prompt("당신의 몸무게는?");
+  let name_w = prompt("테스트 대상의 이름은 무엇인가요?");
+
+  let avg = (height-100)*0.9;
+  let sum = avg - weight;
+
+  if(avg <= weight) {
+    document.write(name_w+"님 당신의 평균 몸무게는"+avg+"kg 이고 당신은 저체중입니다."+sum+"만큼 증량해야합니다.");
+  }else{
+    document.write(name_w+"님 당신의 평균 몸무게는"+avg+"kg 이고 당신은 비만입니다. "+sum+"만큼 감량해야합니다.");
+  }
+
+}else if(name != myname && pw == mypw) {
+  alert(myname+"님 이름이 틀렸어요");
+  location.reload();
+}else if(name == myname && pw != mypw) {
+  alert(myname+"님 비번이 틀렸어요");
+  location.reload();
+}else {
+  alert("둘 다 틀렸어요");
+  location.reload();
+}
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

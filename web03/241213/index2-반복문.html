@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자바스크립트 06</title>
+  <script>
+    //반복문 : 코드를 무식하게 복사붙이기를 하지 않기 위해서 (while / for)
+    // while : 초기값 신경 안씀 ! 조건만 맞으면 무한반복
+    // for : 조건은 당연. 초기값이랑 한번 돌때마다 체크함
+    /* ★ for (시작; 끝; 증가(++) or 감소(--) {
+      document.write();}*/
+
+    //만약 이 코드가 10줄이 아닌 100000줄이라면 
+  /* document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");
+    document.write("hello for문","<br>");*/
+
+    /*
+    //1)보편적으로 쓰는 방법
+    
+    for(let i = 0; i<10; i++){
+      document.write("hello for문"+i+"<br>");
+    }
+  
+    // 여기서 i는 별개의 변수이다.
+
+    //3)한줄 코드는 중괄호 생략 가능
+    for(let i = 0; i<10; i++)document.write("hello for문","<br>");
+    // >한줄 코드는 중괄호 생략 가능
+    */
+
+    //끝값을 커스터마이징 할 수 있음
+  let num = prompt("정수를 입력");
+
+  for(let i = 0; i<num; i++){
+      document.write("hello for문"+i+"<br>");
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

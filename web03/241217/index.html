@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문2</title>
+  <script>
+
+/*예제 1
+    let i;
+    let odd = 0;
+    let even = 0;
+
+    for(i=0; i<10; i++){
+      let num = prompt("입력하세요");
+      if(num%2 == 0) even++; //짝수
+
+      if(num%2 == 1) odd++; //홀수
+
+    }
+
+    document.write("짝수의 개수=>"+even+"<br>"+"홀수의 개수=>"+odd);
+*/
+
+/*예제2
+  let num = prompt("숫자를 입력하세요");
+  let cnt = 0;
+  let i;
+
+    for(i=1; i<num; i++) {
+      document.write(num+"%"+i+"="+(num%i)+"<br>");
+      if(num%i == 0)
+        cnt++;
+    }
+
+    if(cnt == 0)
+      document.write("소수입니다");
+    else
+      document.write("소수가 아닙니다");
+*/
+
+/*
+//다중 for문 핵심문제 1) *을 줄 수 만큼 증가하게 함
+//!! for문이랑 안에 들어가는 변수를 별개로 봐야함 !! / 변수의 대입(=)
+for(let i = 1; i<15; i++) {
+  for(let s = 1; s<i; s++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+*/
+
+/*
+// 다중 for문 문제 2)파스칼 삼각형 반대로 뒤집기
+for(let i = 1; i<15; i++) { 
+  for(let s = 15; s>i; s--) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+*/
+
+/*
+//3단 for문
+for(let i = 1; i<15; i++) { 
+  for(let s = 15; s>i; s--) {
+    document.write("&nbsp");
+  }
+  for(let a = 0; a<i; a++) {
+    document.write("*");
+  }
+    document.write("<br>");
+  }
+*/ 
+
+//★ while문 : for문 분해한 문법의 형태를 띄고 있습니다.
+
+/*예제1)
+let i = 1;
+while(i<=10) {
+  document.write("안녕"+i+"<br>");
+  i++;
+}
+*/
+
+//int main() { //void : 아무거나 다 들어올 수 있는 값
+
+  //return 0; //return 반환 => 출력값 / 종료됨
+//}
+
+/* 예제2)
+let i = 1;
+while(i<=30) {
+  if(i%2 == 0 && i%6 == 0) document.write(i, "<br>");
+  i++;
+}
+*/
+
+/*
+//★ 무한루프 쓰는 법 
+//1
+while(true) { 
+  document.write("hello");
+}
+//2
+for(;;) { 
+  
+}
+무한루프에서 마지막에 정지하고 싶으면 break문을 씀.
+*/ 
+
+/*
+//★ 조건과 상관없이 무조건 한 번 실행하는 코드 => 보통 게임에서 많이 씀
+while(조건문) {
+  해야할일
+  증가연산;
+} 
+do {
+  //무조건 실행
+}
+while (조건문);
+*/
+
+/*예제3
+while(true) {
+    let scn = prompt("점수를 입력하세요");
+
+    if(scn<0 || scn>100) {
+      break;
+    }else if(scn>=80) {
+      document.write("합격을 축하합니다!!");
+    }else {
+      document.write("아쉬워요 불합격입니다ㅠ.ㅠ");
+    }
+}
+*/
+
+/*예제4
+let sum = 0;
+let cnt = 0;
+let person = 1;
+while(true) {
+  let num = prompt("학생의 점수는?");
+  person++;
+  let number = Number(num);
+
+  if(number == 0) break;
+    sum+=number;
+    cnt++;
+}
+
+document.write("입력된 자료의 개수"+cnt+"<br>");
+document.write("입력된 자료의 합계"+sum+"<br>");
+document.write("입력된 자료의 평균"+sum/cnt);
+*/
+
+
+/*예제5
+let = sum, input, sum=0, cnt=0;
+
+while(ture) {
+  input = prompt("수를 입력하세요");
+  num = Number(input);
+
+  if(num == 0) break;
+
+  if(num%2 != 0) {
+    cnt++;
+    sum+=num;
+  }
+
+  document.write("홀수의 합 =>"+sum);
+  document.write("홀수의 평균 =>"+sum/cnt);
+
+}
+*/
+
+/*
+//예제6
+do {
+  let num = prompt("1.입력하기 2.출력하기 3.삭제하기 4.끝내기");
+  let menu;
+  if(num<1 || num>3) {
+    if(num == 4) {break;}
+    menu = "잘못";
+  }else{
+    if(num == 1) {
+      menu = "입력하기를";
+      location.reload();
+    }else if(num == 2) {
+        menu = "출력하기를";
+      location.reload();
+      }else if(num == 3) {
+        menu = "삭제하기를";
+      location.reload();
+      }
+  }
+  alert(menu+"선택하였습니다");
+
+}while(num != 4);
+
+document.write("끝내기를 선택 하였습니다");
+*/  
+
+//예제7
+let sum = 0; num = 1;
+
+while(true) {
+  if(num%2 != 0) sum+=num;
+
+  if(sum>1000) {
+    document.write(num+"더할 때 1000을 넣는다 <br>");
+    document.write("초과된 값 :"+sum);
+    break;
+
+  }
+  num++;
+}
+
+
+
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

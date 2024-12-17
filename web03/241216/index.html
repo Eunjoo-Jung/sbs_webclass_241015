@@ -125,8 +125,9 @@ let t ="<table border='1'>";
   for(let i=1; i<=4; i++) { //행
 
     t+="<tr>";
-      for(k=1; k<=3; k++) { //열
+      for(let k=1; k<=3; k++) { //열
         t+="<td>"+num+"</td>"; //열
+        num++; //지역변수
       }
       t+="</tr>";
     
@@ -135,6 +136,8 @@ let t ="<table border='1'>";
   t+="</table>";
 
   document.write(t);
+
+  //숫자에 카운트가 될 수 있게 만들기
 
 
   </script>

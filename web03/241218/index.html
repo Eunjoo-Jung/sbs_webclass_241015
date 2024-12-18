@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>배열</title>
+  <script>
+    let d = [30, "홍길동", true]; //[ ]대괄호가 선언되면 '나는 배열을 사용하겠다'를 선언한 것
+  /*  document.write(d[0],"<br>"); // []index
+    document.write(d[1],"<br>"); 
+    document.write(d[2],"<br>"); 
+    
+    //for 문으로 출력할 수도 있는 방법?
+    for(let i = 0; i<3; i++) {
+        document.write(d[i],"<br>");
+
+      //. : 접근하다, 참조하다
+      for(let i=0; i<d.length; i++) //.length : 길이 만큼 뽑아오다
+        document.write(d[i],"<br>");
+    
+       // for(;;) //;; : 무한루프
+      for (i in d) {  //d라는 데이터만큼 i에 들어온다 => for in문 / 배열만을 위해 나온 반복문의 종류
+        document.write(d[i],"<br>");
+      }
+    */ 
+
+    //let num = prompt("당신의 점수를 입력하세요");
+
+/*
+    let num = [];
+    let i,avg,sum = 0;
+
+    for(i = 0; i<5; i++) {
+      num[i] = parseFloat(prompt("숫자를 입력하세요"));
+      sum+=num[i];
+    }
+
+    avg = sum / 5.0;
+    document.write("합은"+sum+"이고 평균은"+avg);
+*/  
+    //자바스크립트 내장함수 => 사이트 참고(api 문서 참고)
+
+/*
+    let score = []; //항상 값에 대해 저장해 두기 => 다시 보고 쓸것
+    let sum = 0; //합을 저장하는 변수
+    let max; //최고 점수를 저장하는 변수
+    let mean; //평균 점수를 저장하는 변수
+
+    alert("학생 5명의 성적을 차례로 입력하세요");
+
+    for(let i = 0; i<5; i++) {
+        score[i] = parseFloat(prompt("학생"+(i+1)+"인 성적을 입력하세요"));
+        sum+=score[i];
+    }
+
+    mean = sum/5;
+
+    max = score[0];
+
+    for(let j = 1; j<5; j++) {
+        if(score[j]>max) {
+          max = score[j]; //큰 j의 수가 max에 =된다
+        }
+    }
+
+    document.write("학생 5명의 평균 점수는 :"+mean+"최고점수는"+max+"입니다");
+*/
+
+//랜덤함수로 도박게임제작하기
+
+let select_horse;
+let win_horse;
+let money = 2000;
+let tu_money = 0;
+
+//let win = Math.floor(); //소수점을 내림순으로 꺾어버림
+let win = Math.floor(Math.random()*4)+1; //random():난수를 발산, 0~1까지 
+
+while(1) { //1 = true값을 넣는것
+
+  select_horse = prompt("경주말 소개 1. 윤동희 2. 김도영 3. 박지성 4.원태인 *5는 종료");
+
+  if(select_horse == 5) break;
+
+  alert("당신이 투자할 수 있는 금액은"+money+"입니다");
+  tu_money = prompt("투자할 금액을 입력해 주세요");
+
+  while((tu_money > money) || (tu_money >=0)) {
+    tu_money = prompt("투자금액을 다시 입력해주세요");
+  }
+
+  if(win == select_horse) {
+    alert("성공! 축하합니다! 오늘은 대박의 징조입니다!");
+    money+=tu_money*2;
+    alert("당신의 총 금액은"+money+"입니다!!");
+    location.reload();
+  }else {
+    alert("다시 선택해 주세요 망했어요 ㅜ.ㅜ"+win+"번 말이 답입니다");
+    money-=tu_money;
+    alert("당신의 총 금액은"+money+"입니다~");
+    location.reload();
+  }
+
+}
+
+document.write("<font size='100' color='red'>"+"Game over"+"</font size>");
+
+  //이 프로그램의 단점 : 답이 안 바뀜 / 뭐 찍었는지 다 알아서 식을 삭제하면 절대로 맞는 답이 안나옴
+  
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>객체3</title>
+  <script>
+    //카페보고 다시 치기
+    let t = new Date();
+    let nowMonth = t.getMonth(); //현재 월을 반환합니다.
+    let nowDate = t.getDate(); //현재 일자를 반환합니다.
+    let nowDay = t.getDay(); //현재 요일값을 반환합니다. 0일 ~ 6일
+
+    let m = new Date(2022,4,31);
+
+    let theMonth = m.getMonth();
+    let theDate = m.getDate();
+    let theDay = m.getDay();
+
+    document.write("2002년 월드컵은 몇 월 :"+theMonth+"<br>");
+    document.write("2002년 월드컵은 몇 일 :"+theDate+"<br>");
+    document.write("2002년 월드컵은 무슨 요일 :"+theDay+"<br>");
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>객체4</title>
+  <!-- 스토리지 기능이 있음 -->
+
+  <style>
+    * {}
+    form::after { content:""; display:table; clear:both;}
+    ul {margin:0; padding:0; list-style:none;}
+    ul li {cursor:pointer; position:relative; padding:12px 8px 12px 40px; background:#000; font-size: 10px; transition:0.2s;}
+    ul li:nth-child(add) {background: #f9f9f9;}
+    ul li:hover {background: #ddd;}
+    .close {position: absolute; right: 0; top: 0; padding: 10px 16px; border: none; background: rgba(255, 255, 255, 0);}
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <h2>여행 준비물 점검 목록</h2>
+    <form>
+      <input type="text" id="item" autofocus=""true>
+      <button type="button" id="add" class="addBtn">추가</button>
+    </form>
+    <div id="itemList"></div>
+  </div>
+
+  <script>
+    let itemList = [];
+    let addBtn = document.querySelector("#add");
+    addBtn-addEventListener("click",addList);
+
+    getitems();
+
+    function getitems() {
+        let storeData = localStorage.getItem("storageList");
+        if(storeData != null) itemList = jSON.parse(storeData);
+        showList();
+    }
+
+    function addList() { //아까 잡았던 입력필드에서 값을 갖고 와서 배열추가 
+        let item = document.querySelector("#item").value;
+        if(item != null) {
+          itemList.push(item);
+          document.querySelector("item").value="";
+          document.querySelector("item").focus();
+        }
+
+        localStorage.setItem("storageList",JSON.stringify(itemList));
+    }
+
+    function showList() {
+        let list = "<ul>";
+        for(let i=0; i<itemList.length; i++) {
+          list += "<Li>"+itemList[i]+"<span class='close' id="+i+">X</span></Li>";
+        }
+        list += "</ul>";
+        document.querySelector("#itemList").innerHTML('close');
+        for(let i=0; i<remove.length; i++) {
+          remove[i].addEventListener("click",removeList);
+        }
+    }
+    function removeList() {
+        let id= this.getAttribute("id");
+        itemList.splice(id,1);
+        localStorage.setItem("storageList",JSON.stringify(itemList));
+        showList();
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>객체3</title>
+</head>
+<body>
+  <h1>선호하는 음식</h1>
+  <div id="food_1">
+    <h2 id="title">한식</h2>
+    <ul>
+      <li>
+        <a href="#none">김치</a>
+      </li>
+      <li>김밥</li>
+      <li>비빔밥</li>
+    </ul>
+  </div>
+  <h1>선호하는 음식</h1>
+  <div id="food_2">
+    <h2>양식</h2>
+    <ul>
+      <li>돈가스</li>
+      <li id="pizza">피자</li>
+      <li>파스타</li>
+    </ul>
+  </div>
+</body>
+
+<script>
+  document.getElementsByTagName("h1")[0].style.color="green";
+  document.getElementById("title").style.color="red";
+
+  let myList = document.getElementById("food_1").getElementsByTagName("Li")[1];
+  myList.style.backgroundColor="red";
+
+</script>
+</html>

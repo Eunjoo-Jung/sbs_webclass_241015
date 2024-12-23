@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>객체2</title>
+  <script>
+
+    function Book(title,author,volume,price) {
+      this.title=title; //책 제목
+      this.author=author; //저자
+      this.volume=volume; //분량
+      this.price=price; //가격
+    }
+
+    let html = new Book("웹표준의 정석","_ko","628","28,800");
+    let youtube = new Book("유튜브영상만들기","kim","825","18,800");
+    let phython = new Book("점프 투 파이썬","park","123","38,800");
+
+
+    let bookList = [html,youtube,phython];
+
+    document.write("<h1>책 제목으로 살펴보기</h1>");
+    for(let i = 0; i<bookList.length; i++) {
+      document.write("<p>"+booklist[i].title+"</p>");
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>객체5</title>
+  <script>
+    /*
+    document.write("href :"+location.href,"<br>");
+    document.write("host :"+location.host,"<br>");
+    document.write("hostname :"+location.hostname,"<br>");
+    document.write("host :"+location.h,"<br>");
+    document.write("protocol :"+location.protocol,"<br>");
+    */ 
+
+/*
+    let num=2.5357;
+    let maxnum = Math.max(10,5,6,30);
+    let minnum = Math.min(10,5,6,30);
+    let roundnum = Math.round(num); // 반올림하여 값을 반환합니다
+    let ceilnum = Math.ceil(num); //소수점을 무조건 올립니다
+    let floornum = Math.floor(num); //소수점을 무조건 내립니다
+    let rannum = Math.random(); //0~1까지의 난수를 반환합니다
+
+    document.write(maxnum+"<br>");
+    document.write(minnum+"<br>");
+    document.write(roundnum+"<br>");
+    document.write(ceilnum+"<br>");
+    document.write(floornum+"<br>");
+    document.write(rannum+"<br>");
+*/
+
+//로또 만들기
+    let game = prompt("몇 게임 할래요");
+
+    for(let a=0; a<game; a++) {
+        let lotto = [];
+
+        for(let i=0; i<a; i++) {
+            let num = Math.floor(Math.random()*=44)+1;
+
+            for(let i in lotto) {
+                if(num == lotto[i]) {
+                    num = Math.floor(Math.random()*=44)+1;
+                }
+            }
+
+            lotto.push(num);
+        }
+        //sort : 오름차순으로 나오게 함
+        lotto.sort(function(a,b) {
+                    return a - b;
+                  });
+                    
+      document.write("이번 주 로또 번호 :"+lotto, "<br>");
+    }
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

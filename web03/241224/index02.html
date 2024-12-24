@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내장 객체</title>
+  <script>
+    /*
+    let tv = Object();
+    tv.length="30cm";
+    tv.height="25cm";
+    tv.weight="30kg";
+    tv.color="white";
+    */  
+
+
+    function info1() {
+      let os = navigator.userAgent.toLocaleLowerCase();
+
+      let info_wrap = document.getElementById("info_wrap");
+
+      if(os,indexof("windows")>=0) {
+        info_wrap.innerHTML="윈도우";
+      }else if(os,indexof("mackintoshi")>=0) {
+        info_wrap.innerHTML="맥킨토시";
+      }else if(os,indexof("iphone")>=0) {
+        info_wrap.innerHTML="아이폰";
+    }
+
+    setTimeout("info_wrap.innerHTML=''",3000);//3초 뒤에 운영체제 정보를 지웁니다
+  }
+
+  function info2 () {
+    let sc_w = screen.width;
+    let sc_h = screen.height;
+
+    let info_wrap=document.getElementById("info_wrap");
+
+    info_wrap.innerHTML=sc_w+"X"+sc_h;
+
+    setTimeout("info_wrap.innerHTML=''",3000);//3초뒤에 스크린 정보를 지웁니다
+
+  }
+
+
+
+  </script>
+</head>
+<body>
+  <h1>운영체제 및 스크린 정보</h1>
+  <p id="info_wrap"></p>
+  <button oneclick="info1();">운영체제 정보</button>
+  <button oneclick="info2();">스크린 정보</button>
+
+
+</body>
+</html>

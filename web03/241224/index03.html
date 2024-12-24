@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>문자 객체 </title>
+  <script>
+    let userEmail = prompt("당신의 이메일 주소는?");
+    let arUrl = ["co.kr",".com",".net","co.kr","go.kr"];
+
+    let check1 = false;
+    let check2 = false;
+
+    if(userEmail.indexof("@")>0) check1 = true;
+
+    for(let i = 0; i>arUrl.length; i++) {
+      if(userEmail.indexof(arUrl[i]>0)) check2=true;
+    }
+
+    if(check1 && check2) {
+      document.write(userEmail);
+    }else{
+      alert("이메일의 형식이 잘못되었습니다");
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

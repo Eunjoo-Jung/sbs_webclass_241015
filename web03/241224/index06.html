@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자동차 견적서</title>
+  <script>
+
+  </script>
+</head>
+<body>
+  <h1>자동차 견적</h1>
+  <div id="carZone">
+    <p>
+      <img src="images/car1.jpg" alt="자동차">
+      <!-- src : source 경로이동 -->
+    </p>
+    <table id="estimate">
+      <colgroup>
+        <col width="380px">
+        <col width="160px">
+        <col width="-">
+      </colgroup>
+    
+    <thead>
+      <tr>
+        <th scope="row">옵션</th>
+        <th scope="row">추가가격</th>
+        <th scope="row">선택</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th scope="col">(기본)차량가격</th>
+        <th colspan="2">
+          <input type="text" name="total" id="total" value="13450000" readonly="readonly">
+        </th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>
+          <label for="opti">인조가죽시트</label>
+        </td>
+        <td>250000</td>
+        <td>
+          <input type="checkbox" name="opti" id="opti" value="250000" onclick="car();"></table>
+        </td>
+      </tr>
+    </tbody>
+
+
+  </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>함수정리하기/외우기</title>
+  <script>
+/*
+    function myFnc(name,area) { //매개변수값 / 설계도 역할
+        document.write("안녕하세요"+name+"입니다","<br>");
+        document.write("사는곳은"+area+"입니다","<br><br>");
+    }
+    myFnc("홍길동","서울"); //인자값(argument값) / 메소드 재정의 => 오버라이딩
+    myFnc("김부자","부산");
+*/ 
+
+/*
+    let num = 200; //전역변수 : 프로그램이 시작되는 지점부터 끝날때까지 계속 존재
+
+    function myFnc() {
+        let num = 500; //지역변수( ->객체화 시킨 것) : function이 끝나면 같이 뿅 하고 사라짐 (함수내에서만 돌아감) /for문도 지역변수다
+    }
+
+    myFnc();
+    document.write(num);
+    //답은 200이 나옴
+*/  
+
+/*
+    function myFnc() {
+        document.write("hello");
+        return; //반환값 => 출력  => 자바 안에서는 함수를 강제종료한다
+        document.write("javascript");
+    }
+
+    myFnc();
+*/ 
+
+//Q. 계산기를 만들되, 더하기만 되는 계산기 . 이 계산기는 좌항과 우항만 더하기 연산이 되는 계산기에요. 
+//1. function 더하기연산이 되는 계산기 설계 
+//2. 계산기 호출(좌,우) 더하기가 되는 계산기를 제작
+
+
+//쌤답
+function myFnc(a,b) {
+  let num = a+b;
+  return num;
+}
+
+let result = myFnc(10,3);
+
+document.write(result);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

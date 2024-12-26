@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>함수/배경색바꾸기</title>
+  
+  <script>
+    let color = ["white","yellow","red","aqua"]; //들어가는 배경색 모두를 배열함수 잡기
+
+    let i = 0;
+
+    function colorBg() {
+        i++; //colorBg를 호출할 때마다 증가하게끔 하기
+        if(i>=color.length) i=0; //함수를 한줄로 쓰면 중괄호 생략, aqua까지 가면 white로 돌아오게끔 한다
+        let bodyTag = document.getElementsByTagName("body") [0]; //어떤 규칙성을 가지고 있는 요소에는 인덱스 배열 함수로 초기값을 잡아 줄 수 있음
+        bodyTag.style.backgroundColor = color[i]; 
+    }
+  </script>
+</head>
+<body>
+  <!-- 이벤트 발생 -->
+  <button onclick="colorBg();">배경색 바꾸기</button> 
+</body>
+</html>

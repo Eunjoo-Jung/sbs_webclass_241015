@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>함수</title>
+  <script>
+    let num = 0;
+    function testFnc() {
+      num++;
+      document.write(num,"<br>");
+      if(num==10) return;
+      testFnc(); //재귀함수
+    }
+    testFnc();
+    //if가 없으면 블루스크린 뜸
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

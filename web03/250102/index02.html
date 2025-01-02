@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Plugin 팝업</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <style>
+    .layer_popup{position: absolute; left: 50px; top: 85px; cursor: move; background: #ff0; width: 500px; height: 500px;}
+  </style>
+  <script>
+    $(function(){
+          $(".layer_popup").draggable();//드래그 가능
+          $(".layer_popup a").on("click",function(){ //닫기 누르면 
+              $(".layer_popup").hide();//사라짐
+          });
+
+    });
+  </script>
+</head>
+<body>
+  <div class="layer_popup">
+    <a href="#none">닫기</a>
+  </div>
+</body>
+</html>

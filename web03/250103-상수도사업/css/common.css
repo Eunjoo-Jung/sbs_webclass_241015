@@ -1,14 +1,14 @@
+html {font-size: 10px;} /*최상단 부모요소 */
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul, ol, li{list-style: none;}
-a {text-decoration: none; color: #333;}
+a {text-decoration: none; color: #333; display: inline-block;}
 img,fieldset {border: 0;}
-@font-face {
+/* @font-face {
   font-family: 'NotoSans_Condensed-Regular';
   font-weight: normal;
   font-style: normal;
   src: url('fonts/NotoSans_Condensed-Regular.ttf') format('truetype');
-}
+} */
 
-body{ position: relative; line-height: 1.8em; font-size: 13px; font-family: 'NotoSans_Condensed-Regular','나눔고딕','돋움',Dotum, sans-serif;
-
-}
+body{ position: relative; line-height: 1.8em; font-size: 1.3rem; font-family: 'NotoSans_Condensed-Regular','나눔고딕','돋움',Dotum, sans-serif;}
+.blind {position: absolute; left: -9999px; font-size: 0;}

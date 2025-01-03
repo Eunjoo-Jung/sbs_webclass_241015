@@ -1,4 +1,20 @@
-@import url('common.css');
-@import url('layout.css');
-@import url('main.css');
-@import url('sub.css');
+.center{max-width: 1034px; margin: 0 auto; position: relative;}
+.flex_type01 {display: flex; justify-content: space-between;}
+.flex_type02 {display: flex; justify-content: flex-start;}
+.flex_type03 {display: flex; justify-content: flex-end;}
+.flex_type04 {display: flex; justify-content: center;}
+
+#header {border-top: 4px solid #134696; background: url(img/header_patterns.gif) no-repeat center top;}
+.sub ul li {margin: 0 15px;}
+.sub ul li:last-child {margin-right: 0;}
+.sub ul li::before {content: ""; width: 1px; height: 8px; background: #d1d1d1; display: inline-block; margin-right: 5px; position: relative; top: -1px;}
+.sub ul li:first-child::before {background: none;}
+.sub ul li a {color: #999; font-size: 13px;}
+.h_inner {height: 94px;}
+.h_inner .tit_h1 a {background: url(img/header_logo.png) no-repeat 0 0; width: 210px; height: 42px; }
+.gnb {margin: 10px 0 0 0;}
+.gnb li {margin: 0 15px;}
+.gnb li:last-child {margin-right: 0;}
+.gnb li a {font-weight: bold; font-size: 2.3rem;} /*최상단 부모요소 * rem */
+
+

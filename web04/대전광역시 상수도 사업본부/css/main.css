@@ -1,0 +1,101 @@
+.mv_01 {background: url(img/main_v_01.png) no-repeat top center / cover; height: 243px;}
+.mv_02 {background: url(img/main_v_02.png) no-repeat top center / cover; height: 243px;}
+
+/* 메인공통css */
+.common_tit {border-bottom: 1px solid #d1d1d1; margin-bottom: 15px;}
+.common_tit h2 {background: #4b648c; color: #fff; padding: 3px 12px; font-size: 14px;}
+.play_btn li:first-child a {width: 18px; height: 18px; background: url(img/main_common_prev.gif) no-repeat 0 0;}
+.play_btn li:nth-child(2) a {width: 17px; height: 18px; background: url(img/main_common_next.gif) no-repeat 0 0;}
+.play_btn li:last-child {margin-left: 5px;}
+.play_btn li:last-child a {width: 19px; height: 18px; background: url(img/main_common_stop.gif) no-repeat 0 0;}
+
+#main_contents {display: flex; justify-content: space-between;}
+#main_contents article {padding: 0 10px;}
+#main_contents .con_box01 {width: 33.333%; }
+
+/* 팝업존 */
+.popup_zone_img li h3 {font-size: 13px;}
+.popup_zone_img li p {color: #666; margin-top: 10px;}
+
+.popup_zone_img li:first-child {width: 20%;}
+.popup_zone_img li:last-child {width: 65%; position: relative;}
+.popup_zone_img li a {width: 96px; height: 22px; line-height: 22px; text-align: center; color: #fff; background: #ff9546; border-radius: 20px; position: absolute; bottom: 0;}
+
+/* 정수장 수질정보 */
+.water_info {border: 1px solid #b9cfdc; padding: 8px 10px; border-radius: 5px; background: url(img/main_water_info_img.png) no-repeat 95% 60% #f4f9fc;}
+.water_info h2 {color: #0072bc; font-size: 15px; margin-bottom: 5px;}
+.water_info h2::after {content: ""; display: inline-block; width: 6px; height: 9px; background: url(img/arr.png) no-repeat 0 0; margin-left: 5px; position: relative; top: -2px;}
+.water_info p {color: #666; width: 75%;}
+
+/* 단수/공사 안내 */
+.singular_info h2 {font-size: 13px; color: #222; margin-bottom: 5px;}
+.singular_info_frame {background: #e8e8e8; border-radius: 3px; padding: 5px;}
+.singular_info_frame p {margin: 5px 0 0 35px; color: #666;}
+.singular_info_frame p::before {content: ""; display: inline-block; width: 9px; height: 9px; background: url(img/main_singular_info_icon.png) no-repeat 0 0; margin-right: 3px;}
+
+/* 홍보관 */
+.its_pr {background: url(img/its_bg.jpg) no-repeat left bottom; height: 150px; overflow: hidden;}
+.its_pr h2 {text-align: center; margin-left: 20px; color: #0073be; font-size: 15px;}
+.its_pr ul {width: 65%; margin-top: 35px;}
+.its_pr ul li {width: 50%; border-right: 1px solid #d1d1d1;}
+.its_pr ul li:last-child {border: 0;}
+.its_pr ul li a {text-align: center;}
+.its_pr_item01 {background: url(img/main_itspr_icon01.png) no-repeat center 0;width: 100%; padding-top: 45px;}
+.its_pr_item02 {background: url(img/main_itspr_icon03.png) no-repeat center 0;width: 100%; padding-top: 45px;}
+
+/* 공지사항 */
+.more {background: #aaa; font-size: 13px; color: #fff !important; width: 16px; height: 14px; text-align: center; line-height: 14px; margin: 5px 0 0 0;}
+.bbs {height: 160px; overflow: hidden;}
+.bbs_box ul {}
+.bbs_box ul li {display: flex; justify-content: space-between; height: 23px; line-height: 23px;}
+.bbs_box ul li a {width: 70%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #666;}
+.bbs_box ul li a::before {content: ""; display: inline-block; width: 2px; height: 2px; background: #4a628e; margin: 0 3px; position: relative; top: -3px;}
+
+/* 홍보비디오 */
+.video h2 {margin-bottom: 10px; font-size: 14px;}
+.video_item li:first-child {width: 50%;}
+.video_item li:first-child p {text-align: justify; color: #666; line-height: 18px;}
+.video_item li:first-child a {font-size: 13px; font-weight: bold; margin: 20px 0 0 0; background: url(img/main_its_vod_icon.png) no-repeat 0 1px; padding-left: 28px;}
+.video_item li:last-child {width: 36%; text-align: right;}
+.video_item li:last-child img {width: 119px;}
+
+#main_contents .con_box02 {width: 33.333%;}
+#main_contents .con_box03 {width: 33.333%;}
+
+/* 민원행정콜센터 */
+.quick_navi {padding: 8px 12px; border: 1px solid #dcdcdc; background: #f8f8f8; border-radius: 5px;}
+.quick_navi h2 {font-size: 28px; color: #f26522;}
+.quick_navi h2 span {color: #41a0e1; font-size: 15px; margin: 0 15px 0 0;}
+
+.quick_navi ul {margin: 10px 0 0 0; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.quick_navi ul li {width: 33.333%; text-align: center; margin-bottom: 10px;}
+.quick_navi ul li a {padding-top: 65px; text-align: center;}
+.quick_navi ul li a span {font-size: 12px; color: #666;}
+.quick_navi ul li:nth-child(1) a {background: url(img/main_quick_icon01.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(2) a {background: url(img/main_quick_icon02.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(3) a {background: url(img/main_quick_icon03.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(4) a {background: url(img/main_quick_icon04.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(5) a {background: url(img/main_quick_icon05.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(6) a {background: url(img/main_quick_icon06.png) no-repeat center 0;}
+.quick_navi ul li:nth-child(7) a {background: url(img/main_quick_icon07.png) no-repeat center 0; }
+.quick_navi ul li:nth-child(8) a {background: url(img/main_quick_icon08.png) no-repeat center 0; }
+.quick_navi ul li:nth-child(9) a {background: url(img/main_quick_icon09.png) no-repeat center 0; }
+
+/* 이메일 */
+.email {height: 160px; background: url(img/email_tab_bg.jpg) no-repeat bottom right;}
+.email ul {width: 55%; padding: 20px 0 0 0;}
+.email ul li {border-bottom: 1px solid #e1e1e1;}
+.email ul li a {color: #3693d2; font-size: 14px; height: 38px; line-height: 38px;}
+
+
+@media (max-width: 950px) {
+    #main_contents {flex-wrap: wrap; padding: 0 15px;}
+    #main_contents .con_box01 {width: 50%;}
+    #main_contents .con_box02 {width: 50%;}
+    #main_contents .con_box03 {width: 100%; margin: 20px 0 0 0;}
+}
+
+@media (max-width: 767px) {
+    #main_contents .con_box01 {width: 100%;}
+    #main_contents .con_box02 {width: 100%;}
+}

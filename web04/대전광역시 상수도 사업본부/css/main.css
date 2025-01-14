@@ -83,10 +83,9 @@
 
 /* 이메일 */
 .email {height: 160px; background: url(img/email_tab_bg.jpg) no-repeat bottom right;}
-.email ul {width: 55%; padding: 20px 0 0 0;}
+.email ul {width: 55%; padding: 24px 0 0 0;}
 .email ul li {border-bottom: 1px solid #e1e1e1;}
-.email ul li a {color: #3693d2; font-size: 14px; height: 38px; line-height: 38px;}
-
+.email ul li a {font-weight: bold; color: #3693d2; font-size: 14px; height: 38px; line-height: 38px;}
 
 @media (max-width: 950px) {
     #main_contents {flex-wrap: wrap; padding: 0 15px;}

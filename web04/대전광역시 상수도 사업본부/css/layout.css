@@ -19,11 +19,33 @@
 .m_menu {width: 85px; height: 30px; line-height: 30px; text-align: center; border: 1px solid #d1d1d1; border-radius: 3px; font-weight: bold; transition: .5s; display: none;}
 .m_menu:hover {background: #134696; color: #fff;}
 
+/* 푸터영역 */
+#footer {margin: 60px 0 0 0;}
+#footer .f_inner .foot_box {padding: 10px 0 15px 0; background: #777;}
+.foot_play {width: 28%;}
+.foot_play p {color: #eee; height: 18px; line-height: 18px;}
+.partner_title {width: 50%;}
+.partner_title a {text-align: left; border: 1px solid #e8e8e8; background: url(../images/footer_partner_btn.gif) no-repeat right center #fff; padding: 5px 25px 5px 10px; margin-left: 10px;}
+
+.footer_wrap {padding: 20px 0;}
+.qrcode {width: 10%;}
+.address {width: 75%;}
+.footer_link {margin: 0 0 15px 0;}
+.footer_link li {margin-right: 15px;}
+.footer_link li:nth-child(2) {color: #003399; font-weight: bold;}
+.footer_link li::before {content: ""; display: inline-block; width:
+1px; height: 10px; background: #d1d1d1; margin-right: 5px;}
+.footer_link li:first-child::before {background: none;}
+.add_box {line-height: 21px; color: #999;}
+.mobile_info {width: 15%;}
+.mobile_info a {width: 175px; height: 65px; background: url(img/footer_mobile.png) no-repeat 0 0;}
 @media (max-width: 1034px) {
     .tit_h1 {position: absolute; top: 25px; left: 15px;}
     .snb {display: none;}
     .gnb {display: none;}
     .m_menu {display: block; position: absolute; right: 15px; top: 30px;}
+    .qrcode {display: none;}
+    .mobile_info {display: none;}
 }
 
 

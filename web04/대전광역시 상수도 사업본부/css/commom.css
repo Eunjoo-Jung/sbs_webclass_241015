@@ -7,6 +7,9 @@ a {text-decoration: none; color: #333; display: inline-block;}
 a:link, a:visited, a:hover, a:active, a:focus {text-decoration: none; cursor: pointer; color: #555;}
 img {border: none;}
 address,em {font-style: normal;}
+table {border-collapse: collapse;}
+table th {font-size: 12px;}
+table td {font-size: 12px;}
 body {font-family: "Nanum Gothic", serif; font-size: 13px;}
 
 .mar_t05 {margin-top: 5px !important;}

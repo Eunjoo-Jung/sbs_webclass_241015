@@ -1,0 +1,21 @@
+/* 공통레이아웃css */
+.center {max-width: 1800px; margin: 0 auto; position: relative;}
+.blind {position: absolute; left: -9999px; font-size: 0;}
+.flex_type01 {display: flex; justify-content: space-between;}
+.flex_type02 {display: flex; justify-content: flex-start;}
+.flex_type03 {display: flex; justify-content: flex-end;}
+.flex_type04 {display: flex; justify-content: center;}
+
+/* 헤더영역css */
+.h_inner {height: 95px; padding: 30px 0;}
+.h_inner .tit_h1 a {background: url(img/Icon_com/Main_logo_color_02.png) no-repeat 0 0; width:167px; height: 31px; padding-top: 40px;}
+.h_inner .gnb {padding: 10px 0 0 0;}
+.h_inner .gnb ul li {padding-left: 67px;}
+.h_inner .gnb ul li a {font-size: 16px; font-weight: bold;}
+.snb .search {background: url(img/Icon_com/search_icon_black.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 0 25px 0 0;}
+.snb .m_menu {background: url(img/Icon_com/mo_menu_icon_black.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 3px 0 0 0;}
+
+@media (max-width:1000px) {
+    .h_inner {padding: 25px 15px;}
+    .h_inner .gnb {display: none;}
+}

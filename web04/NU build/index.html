@@ -3,13 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>클론사이트_02</title>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/jquery.bxslider.css">
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/script.js"></script>
     </head>
+    
     <body>
+        <script>
+            AOS.init({
+                 offset: -1200
+            });
+        </script>
         <!-- 헤더시작 -->
         <header id="header">
             <div class="h_inner center flex_type01">
@@ -61,7 +69,7 @@
         </div>
         <section id="section">
             <article class="management">
-                <div class="manag_con01">
+                <div class="manag_con01" data-aos="fade-right">
                     <div class="manag_item">
                         <h2>Management Ideology</h2>
                         <h3>경영이념</h3>
@@ -73,7 +81,7 @@
                     </div>
                     <a href="#none" class="manag_btn">VIRW MORE</a>
                 </div>
-                <div class="manag_con02">
+                <div class="manag_con02" data-aos="fade-left">
                     <div class="manag_wrap_left">
                         <div class="manag_item01">
                             <div class="manag_small">
@@ -104,7 +112,113 @@
                     </div>
                 </div>
             </article>
+            <article class="business">
+                <div class="busi_tit_wrap">
+                    <h2>핵심사업</h2>
+                    <h2>건축사업</h2>
+                    <p>Architecture Works</p>
+                </div>
+                <div class="business_wrap">
+                    <div class="business_box01">
+                        <div class="box_item">
+                            <h3>건축</h3>
+                            <p>
+                                국민생활과 국가 발전에 이바지하는 감동의 <br>
+                                건설기술을 선보이기 위해 노력하겠습니다.
+                            </p>
+                            <a href="#none">VEIW MORE</a>
+                        </div>
+                    </div>
+                    <div class="business_box02">
+                        <img src="images/contents02_right_bg.png" alt="건물이미지">
+                    </div>
+                </div>
+            </article>
+            <article class="about">
+                <div class="about_wrap">
+                    <div class="about_box">
+                        <h2>ABOUT US</h2>
+                        <p class="about_text01">
+                            Meticulous Planning &amp; Thorough Construction
+                        </p>
+                        <p class="about_text02">
+                            남양의 일원으로서 부끄럼 없이 맡은 일에 책임을 지고 <br>
+                            창의력을 발휘하고 협동 단결하여 남양을 발전시키는 초석이 되겠습니다.
+                        </p>
+                        <a href="#none" class="about_btn">
+                            <span>인사말</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="news">
+                <div class="news_tit">
+                    <h2>NAMYANG <span>NEWS</span></h2>
+                    <p>님양건설의 새로운 소식입니다</p>
+                </div>
+                <div class="news_wrap">
+                    <div class="news_box">
+                        <h2>남양건설 "치밀한 계획 철저한 시공주력"</h2>
+                        <p>
+                           호남의 중견기업인 남양건설(주)이 전남대학교병원에 발전후원금 3천만원을 기탁해 눈길을 끌고 있다. 
+                        </p>
+                        <h3>공지사항<span>2024.02.02</span></h3>
+                    </div>
+                    <div class="news_box">
+                        <h2>남양건설 "치밀한 계획 철저한 시공주력"</h2>
+                        <p>
+                           호남의 중견기업인 남양건설(주)이 전남대학교병원에 발전후원금 3천만원을 기탁해 눈길을 끌고 있다. 
+                        </p>
+                        <h3>공지사항<span>2024.02.02</span></h3>
+                    </div>
+                    <div class="news_box">
+                        <h2>남양건설 "치밀한 계획 철저한 시공주력"</h2>
+                        <p>
+                           호남의 중견기업인 남양건설(주)이 전남대학교병원에 발전후원금 3천만원을 기탁해 눈길을 끌고 있다. 
+                        </p>
+                        <h3>공지사항<span>2024.02.02</span></h3>
+                    </div>
+                </div>
+            </article>
+            <article class="recruit">
+                <div class="rec_box">
+                    <div class="rec_item">
+                        <h2>Recruit</h2>
+                        <p>
+                            도전하는 여러분은<br>
+                            세계로 뻗어갈 주역이 될 인재입니다.
+                        </p>
+                        <a href="#none">인재채용</a>
+                    </div>
+                </div>
+                <div class="rec_box">
+                    <div class="rec_item">
+                        <h2>Qualified Employee</h2>
+                        <p>
+                            인재를 바라보는 시선은<br>
+                            항해하는 배를 바라보는 것과 같습니다.
+                        </p>
+                        <a href="#none">인재상</a>
+                    </div>
+                </div>
+            </article>
         </section>
+        <footer>
+            <div class="f_inner">
+                <div class="footer_left">
+                    <h1><span class="blind">남양건설</span></h1>
+                    <address>
+                        <p>
+                            CEO : 마형렬<br>
+                            나주본점 : 전라남도 나주시 예향로 4073<br>
+                            광주사무소 : 광주 북구 경량로 170<br>
+                            대표전화 : 061) 334-1031
+                        </p>
+                    </address>
+                </div>    
+                <small>copyright 2024 NamYang.co.kr all rights reserved</small>
+            </div>
+        </footer>
     </body>
 </html>
 

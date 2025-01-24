@@ -1,0 +1,10 @@
+디자인이든 코딩이든 둘 다 놓치지 않고 싶다
+                    처음엔 최저부르기 
+                 포폴:  웹제작을 위주로 하기 (2~3개)
+                    서브페이지 무조건!! 
+프로그램 쪽도 공부하고 디자인도 공부하기
+
+자바스크립트 공부 많이할것
+
+AOS 스크롤 애니메이션 사용법
+https://www.designkits.co.kr/blog/web-css/animation/AOS-SCROLL?srsltid=AfmBOoqJdu7xwDAydlH-MB1omsw7VOkzUY5cziCfPSr78bTLsCZ3O0Vv

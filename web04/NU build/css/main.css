@@ -18,7 +18,6 @@
 .manag_btn:hover {background: #d52b3a;}
 
 .manag_con02 {display: flex; justify-content: space-between;}
-
 .manag_small {}
 .manag_small h2 {font-size: 28px; margin: 0 0 15px 0;}
 .manag_small h2::after {content: ""; display: inline-block; width: 10px; height: 10px; background: #d52b3a; border-radius: 50%; position: relative; top: -25px; left: 5px;}
@@ -36,10 +35,69 @@
 #section .management .manag_con02 {width: 50%; border: 1px solid #111; 
     height: 890px; overflow: hidden;}
 
+
+#section .business {max-width: 1364px; margin: 0 auto; position: relative;}
+#section .business_wrap {display: flex; justify-content: space-between; margin-top: 15px;}
+.busi_tit_wrap {display: flex; justify-content: space-between; padding: 25px 0 0 0; position: relative;}
+.busi_tit_wrap h2:first-child  {font-size: 38px; font-weight: bold; width: 30%;}
+.busi_tit_wrap h2:first-child::after {content: " "; display: inline-block; width: 170px; height: 1px; background: #f00; position: relative; top: -15px; margin-left: 13px;}
+.busi_tit_wrap h2:nth-child(2) {width: 70%; color: #f00; margin-left: 60px;}
+.busi_tit_wrap p {width: 45%; font-size: 5em; font-weight: bold; color: #eceff2; position: absolute; right: 0;}
+
+#section .business_wrap .business_box01 {width: 30%; height: 579px; background: url(img/Index/con02/contents02_left_bg.png) no-repeat 0 0 / cover; position: relative; padding: 30px;}
+#section .business_wrap .business_box01 .box_item {position: absolute; top: 85px; color: #fff;}
+#section .business_wrap .business_box01 .box_item h3 {font-size: 35px; margin-bottom: 25px;}
+#section .business_wrap .business_box01 .box_item p {font-size: 18px; line-height: 28px; margin-bottom: 40px;}
+#section .business_wrap .business_box01 .box_item a {font-size: 18px; color: #fff; font-weight: bold;}
+#section .business_wrap .business_box01 .box_item a::after {content: ">"; position: relative; left: 15px;}
+
+#section .business_wrap .business_box02 {width: 70%; padding: 65px 0;}
+
+#section .about {background: url(img/Index/con04/contents04_bg.png) no-repeat center top / cover; height: 841px;}
+#section .about_wrap {max-width: 1800px; margin: 0 auto; position: relative;}
+#section .about_wrap .about_box {position: absolute; top: 150px; color: #fff;}
+#section .about_wrap .about_box h2 {font-size: 6em; font-weight: bold; margin-bottom: 85px;}
+#section .about_wrap .about_box .about_text01 {font-size: 32px; font-weight: bold; color: #ffdcc0; margin-bottom: 20px;}
+#section .about_wrap .about_box .about_text02 {font-size: 17px; color: #fff; font-weight: bold; margin-bottom: 20px; margin-bottom: 60px; line-height: 30px;}
+#section .about_wrap .about_box .about_btn {color: #fff; border: 1px solid #fff; font-size: 18px; padding: 10px 52px;}
+#section .about_wrap .about_box .about_btn span::after {content: ""; display: inline-block; height: 21px; width: 21px; background: url(img/Index/con04/contents04_icon01.png) no-repeat 0 0; position: relative; top: 3px; margin-left: 5px;}
+
+#section .news {max-width: 1200px; margin: 85px auto 0; position: relative;}
+.news .news_tit {text-align: center; margin: 0 0 10px 0;}
+.news .news_tit h2 {font-size: 31px; font-weight: bold; margin-bottom: 15px;}
+.news .news_tit h2 span {color: #d52b3a;}
+.news .news_tit p {font-size: 16px; color: #999;}
+.news .news_wrap {display: flex; justify-content: space-between;}
+.news .news_wrap .news_box {width: 33.333%; border-right: 1px solid #d1d1d1; padding: 25px;}
+.news .news_wrap .news_box:last-child {border-right: none;}
+.news .news_wrap .news_box h2 {font-size: 22px; color: #666; margin-bottom: 16px;}
+.news .news_wrap .news_box p {color: #999; font-size: 16px; line-height: 28px; margin-bottom: 16px;}
+.news .news_wrap .news_box h3 {color: #d52b3a; font-size: 16px;}
+.news .news_wrap .news_box span {color: #666; font-size: 16px;}
+.news .news_wrap .news_box span::before {content: ""; width: 1px; height: 10px; background: #ddd; margin: 0 10px;}
+
+.recruit {display: flex; justify-content: space-between; background: #242424; padding: 50px;}
+.recruit .rec_box {width: 50%; border-radius: 50px; height: 553px; margin: 0 10px;}
+.recruit .rec_box:first-child {background: url(img/Index/career/career_left_bg.png) no-repeat 0 0 / cover;}
+.recruit .rec_box:last-child {background: url(img/Index/career/career_right_bg.png) no-repeat 0 0 / cover;}
+
+.recruit .rec_box .rec_item {padding: 25px;}
+.recruit .rec_box .rec_item h2 {color: #f00; font-size: 28px; margin-bottom: 20%;}
+.recruit .rec_box .rec_item p {font-size: 21px; color: #fff; margin-bottom: 20%;}
+.recruit .rec_box .rec_item a {color: #fff; border: 1px solid #fff; padding: 12px 16px; font-size: 18px;}
+.recruit .rec_box .rec_item a::after {content: ""; display: inline-block; height: 21px; width: 21px; margin-left: 10px; background: url(img/Index/career/career_icon01.png) no-repeat 0 0; position: relative; top: 3px;}
+
+footer {background: #000;}
+footer .f_inner {display: flex; justify-content: space-between; max-width: 1800px; margin: 0 auto; align-items: flex-end; color: #666;}
+footer .f_inner .footer_left h1 {background: url(img/Icon_com/Main_logo.png) no-repeat 0 0 / cover; width: 140px; height: 30px; margin: 25px 0;}
+footer .f_inner .footer_left p {font-size: 14px;}
+footer .f_inner small {margin-bottom: 35px; font-size: 12px;}
+
 @media (max-width: 1400px) {
     #section .management .manag_con02 {flex-direction: column;}
     .manag_wrap_left {width: 100%; padding-right: 170px;}
     .manag_wrap_right {width: 100%; padding-right: 170px;}
+    .busi_tit_wrap p {font-size: 2em;}
 }
 
 @media (max-width: 1200px) {
@@ -47,6 +105,20 @@
     #section .management .manag_con01 {width: 100%;}
     #section .management .manag_con02 {width: 100%;}
     .manag_wrap_right {display: none;}
+    #section .business_wrap  {flex-wrap: wrap;}
+    .busi_tit_wrap h2:first-child {width: 100%;}
+    .busi_tit_wrap h2:nth-child(2) {display: none;}
+    .busi_tit_wrap p {display: none;}
+    #section .business_wrap .business_box01 {width: 100%;}
+    #section .business_wrap .business_box02 {width: 100%;}
+    #section .business_wrap .business_box02 img {width: 100%;}
+    
+    .news .news_wrap {flex-wrap: wrap;}
+    .news .news_wrap .news_box {width: 50%;}
+    .news .news_wrap .news_box:last-child {display: none;}
+    
+    .recruit {flex-wrap: wrap;}
+    .recruit .rec_box {width: 100%; margin-bottom: 30px;}
 }
 
 @media (max-width: 1000px) {
@@ -54,4 +126,8 @@
     .mv_text {bottom: 50%; transform: translateX(-50%); transition: .6s;}
     .mv_text span {display: none;}
     .mv_text p {font-size: 5em; width: 100%; text-align: center;}
+    #section .about {height: 700px;}
+    #section .about_wrap {padding: 0 45px;}
+    #section .about_wrap .about_box {top: 100px;}
+    .news .news_wrap .news_box {width: 100%; border-right: none; border-bottom: 1px solid #d1d1d1;}
 }

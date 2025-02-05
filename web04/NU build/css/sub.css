@@ -1,0 +1,18 @@
+.sub_flex01 {display: flex; justify-content: space-between; margin: 85px auto;}
+#subcontents {max-width: 1600px; margin: 100px auto; position: relative;}
+.content_h1 {text-align: center;}
+.content_h1 h1 {font-size: 32px; margin-bottom: 15px; font-weight: bold;}
+.content_h1 p {font-size: 16px;}
+
+/* CEO인사말 */
+.sub01_left {width: 50%; margin: 20px;}
+.sub01_left img {width: 100%;}
+.sub01_right {width: 50%; margin: 20px;}
+.sub01_right p {margin-bottom: 35px; font-size: 17px; color: #666;}
+.sub01_right p span {color: #d52b3a; font-weight: bold;}
+
+@media (max-width: 900px) {
+    .sub_flex01 {flex-wrap: wrap;}
+    .sub01_left {width: 100%;}
+    .sub01_right {width: 100%;}
+}

@@ -15,6 +15,27 @@
 .snb .search {background: url(img/Icon_com/search_icon_black.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 0 25px 0 0;}
 .snb .m_menu {background: url(img/Icon_com/mo_menu_icon_black.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 3px 0 0 0;}
 
+/* 서브비쥬얼영역 */
+.sub_hinner {position: absolute; width: 100%;}
+.h_inner .subtit_h1 a {background: url(img/Icon_com/Main_logo_02.png) no-repeat 0 0; width:167px; height: 31px; padding-top: 40px;}
+.search_sub {background: url(img/Icon_com/search_icon.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 0 25px 0 0;}
+.m_menu_sub {background: url(img/Icon_com/mo_menu_icon.png) no-repeat 0 0 / contain; width: 30px; height: 24px; margin: 3px 0 0 0;}
+.sub_hinner a {color: #fff;}
+.subtop_h2 {display: flex; align-items: center; justify-content: center; height: 100%; color: #fff; font-size: 49px;}
+.subtop_h2::before {content: " "; display: block; background: #d52b3a; width: 70px; height: 2px; position: relative; left: 124px; top: -40px;}
+
+.sub_navi {border-bottom: 1px solid #d1d1d1;}
+.sub_navi_wrap {display: flex; height: 62px; line-height: 62px; max-width: 1600px; margin: 0 auto; position: relative;}
+.sub_navi_wrap .home {width: 5%; border: 1px solid #d1d1d1; border-top: 0; border-bottom: 0; text-align: center; padding-top: 10px;}
+.sub_navi_wrap .home a {background: url(img/Sub_01/sub_home_icon.png) no-repeat 0 0; width: 22px; height: 22px;}
+.sub_navi_wrap p {font-size: 16px; font-weight: bold; display: flex; justify-content: space-between;}
+.sub_navi_wrap p em {display: inline-block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 100%;}
+.sub_navi_wrap .navi_one {padding: 0 15px; width: 13%; border-right: 1px solid #d1d1d1;}
+.sub_navi_wrap .navi_two {padding: 0 15px; width: 13%; border-right: 1px solid #d1d1d1; background: #5c65a7; color: #fff;}
+
+
+.sv {height: 425px; background: url(img/Sub_01/sub01_bg_.png) no-repeat center top / cover;}
+
 @media (max-width:1000px) {
     .h_inner {padding: 25px 15px;}
     .h_inner .gnb {display: none;}
